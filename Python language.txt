@@ -1,0 +1,5229 @@
+                     This Is A Python Course :- 
+ From ElZero Web School.
+
+numpy       http://sourceforge.net/projects/numpy/files/NumPy/
+scipy       http://sourceforge.net/projects/scipy/files/scipy/
+Matplotlib  http://matplotlib.org/downloads.html
+Pandas      http://pandas.pydata.org/getpandas.html
+
+
+
+Ctrl + Shift + k                   # to delete a line 
+Ctrl + Shift + f                   # to search in each folder of the thing you want
+Ctrl + h                           # to select the same word in muliple lines "first replace one by one or replace all"
+Shift + Alt + f                    # to format the lines
+Alt + up and down movment keys     # to mave a line you are in 
+Home key                           # make cursor in the first of the line
+End key                            # make cursor in the end of the line
+Ctrl + Home key                    # make cursor in the first of the page
+Ctrl + End key                     # make cursor in the end of the page
+Alt + number                       # change the taps quickly
+Alt + left and right movment keys  # move betwen last 2 opended taps
+Ctlr + Shift + b                   # search for the file of your project
+Ctlr + b                           # for open side bar
+Ctlr + Shift + [                   # to fold a code
+Ctlr + Shift + ]                   # to unfold a code
+Alt + mouce click in any line      # to refactor " type in all lines at one time"
+Ctrl + Alt + up or down            # to refactor " type in all lines at one time"
+Shift + Alt                        # to copy a line or multiple lines
+
+--------------------------------------------------------------------------------------------------
+Python is Dynamicly Typed Language. "you can assign a variable many times without any errors"
+Ther is a Reserved Words in the language. "if, class, has any color except the white"
+   you can type help("keywords") to show all reserved words.
+  
+
+print function :-
+   print(" text you want to display. ")   
+   print(' text you want to display. ')
+-------------------------------------------------------------------------------------------------------------
+we use ; to end a statement when we type 2 statements in one line to have a new line between them.
+------------------------------------------------------------------------------------------------------
+comments :-
+   we use # to write a comment.
+   we use ctrl + / before any code line to make it a comment or prevent it from run.
+------------------------------------------------------------------------------------------------
+range(start num, end num)         generate a set of numbers you want. "don't include last num"
+-----------------------------------------------------------------------------------------------
+Separator or Repaeter :-
+ print("any thing here" * number)
+
+   print("-" * 10)                               # ----------
+------------------------------------------------------------------------------------------------
+type()			It shows you the type of the data.
+			All Data in Python are Objects.
+
+   int			   Integers. "positive or negative numbers"
+   float                   Floating point number. "int numbers with point in it like 1.5"
+   str			   String. "words we type"
+   list 	           List. "It's called array in other languages like [ 1, 2, 3, 4, 5 ]"
+   tuple		   Tuple. "like (1, 2, 3, 4, 5)"
+   dict 		   Dictionary. "like {"one" : 1, "two" : 2, "three" : 3, "four" : 4}"
+   bool 		   Boolean. "like 1==1 -> true that's boolean exepretion"
+--------------------------------------------------------------------------------------------------
+variable = " variable value "					# to assign a variable.  
+variable, variable, variable = num, num, num 			# to assign more than one variable in one line.
+
+ Name Convention and Rules :-
+   can start with (a-z or A-Z) or Underscore.
+   can't start with nums or special charachters "-".
+   can include nums or Underscore. 
+   can't include special charachters.
+   case sensitive. "name is not like Name"
+   can't use variable before assign it.
+
+ Best way to assign a variable :-
+    name = "osama fathy"		# Single Word => Normal
+    myName = "osame fathy"  	# Two Words => camelCase
+    my_name = "osame fathy"  	# Two Words => sanke_case
+----------------------------------------------------------------------------------------------
+Source Code : Original Code You Write it in computer.
+Translatoin : Converting Source Code Into Machine Language.
+Compilation : Traslate Code Before Run Time.
+Run Time    : Period App Take To Executing Commands.
+Interpreted : Code Translated On The Fly DUring Execution.
+--------------------------------------------------------------------------------------------
+Escape Sequences Characters :-
+
+   \b				Back Space. "remove last character of the word"
+       print(" I lovee\b YOu")	                  # I love YOu "remove e"
+
+   \				Escape new line and Back slash.
+       print("Hello\
+                I Love\
+                Python.")       # Hello I love Python. "escape new lines"
+
+   \\    			to print \ without Escaping any word.
+
+   \"words you want\"           to print "words you want" without errors. "it works with single quote"
+       print("i love double quote \"test\" ")    # i love double quote "test"
+       print('i love souble quote "test" ')      # i love double qoute "test" 
+       print('i love single quote \'test\' ')    # i love single quote 'test'
+       print("i love single quote 'test' ")      # i love single qoute 'test'
+   
+   word\'s                      to print word with ' 
+       print('what\'s your name?')               # what's your name?
+                                 
+   \n				to print a second line.
+       print(" Hello \n Python")                 # Hello 
+						    Python
+                                      
+   \r                           Carriage Return. "replace first words with the words behind it and continue"
+       print("123456\rABCDE")			 # ABCDE6 "Replacing first 5 nums with the length of the last line"
+                                  
+  \t                            Horizontal Tab. " type tab betweeb words"
+       print("Hello\tPython")			 # Hello   Python
+
+  \xhh				Character Hex value. "hh replaced by the hex value of the Character"
+       print("\x4f\x73")			 # Os
+-----------------------------------------------------------------------------------------------------------------------      
+Concatenation :-                                 " link between 2 strings to make a big string"
+ we can't concatenate integers with strings here.
+ 
+   msg = "I Love"                                # to include a space you can type it here,
+   lang = "Python"                               # or here before python or like in print func.
+   Print(msg + " " + lang)          		 # I Love Python
+   print(msg + "\n" + lang)                      # I Love
+                                                    Python
+------------------------------------------------------------------------------------------------------------------
+Strings :-
+ to assign a string with maltible lines we use """ """ or ''' ''' 
+ and also it scapes the " " and ' ' and print them.
+
+   myString = ''' first
+                  second "test" 'test'           # if put \ in the end it will scape the last line.
+                  third '''                      # or you can use """ """
+   print(myString)                               # first
+               					   secon "test" 'test'
+						   third
+------------------------------------------------------------------------------------------------------------------
+Python start counting from Zero and didn't include End number.
+Positive numbers start counting from First of the word begining with 0.
+negative numbers start counting from End of the word begining wih -1.
+If you didn't include a Start number it will begin from Zero.
+If you didn't include an End number it will end all the string.
+If you didn't include a Start or End number it will include all the string.
+Defult step is 1.
+
+Indexing :-           				 "Access single Item"
+ varible[num]
+
+   mystirng = "I love Python"
+   print(mystring[0]) 				 # index 0  => I
+   print(mystring[9])				 # index 9  => y    "character from First"
+   print(mystring[-2]) 				 # index -2 => n    "character from End" 
+
+
+Slicing :-                                       "Access Multiple sequence Items"
+ variable[Start:End]
+ variable[Start:End:steps]
+ 
+   mystring = "I love Python"
+   print(mystring[8:11]) 			 # index [8:11]  => yth    "letters num 8 9 10"
+   print(mystirng[:10]) 			 # index [:10]   => I love Pyt "first 10 letters"
+   print(mystring[7:]) 				 # index [7:]    => Python  "strat from letter 7 to the end of string"
+   print(mystring[:])                            # index [:]     => I love Python  "full string"
+   print(mystring[0::1])                         # index [0::1]  => I love Python  "full string"
+   print(mystring[::1])                          # index [::1]   => I love Python  "full string"
+   print(mystring[0:9:2])			 # index [0:8:2] => Ilv y  "letters num 0 2 4 6 8"
+---------------------------------------------------------------------------------------------------------
+len() :-					 "A function return the number of Items in a container."
+                                                 "It deals with spaces as a characters "it count them." 
+   a = "I Love Python"
+   print(len(a)) 				 # 13 elements.
+
+
+
+.strip() :-     				 "Remove Speces from Right and Left."
+.rstrip() :-    				 "Remove Spaces from Right."
+.lstrip() :-    				 "Remove Spaces from Left." 
+ 
+   a = "    I love Python    "
+   print(a.strip())                              # I Love Python     "without any spaces"
+   print(a.rstrip())                             #     I Love Python "with 4 spaces in left"
+   print(a.lstrip())                             # I Love Python     "with 4 spaces in right"
+   
+ If you put a parameter in the () of strip it will Remove it too.
+   
+   a = "####I Love Python####"
+   print(a.strip("#"))				 # I Love Python     "without any spaces or #"
+   print(a.rstrip("#")) 			 # ####I Love Python "without any spaces or # in right"
+   print(a.lstrip("#"))  			 # I Love Python#### "without any spaces or # in left"
+
+
+
+.title() :-                                      "Make first letter and letters after numbers capetal."
+
+   a = "i love 2d graphics, 3g technology and python"
+   print(a.title())                              #  Love 2D Graphics, 3G Technology And Python
+
+
+
+.capitalize() :-                                 " Just make first letter of the sentence capital."
+
+   a = "i love 2d graphics, 3g technology and python"
+   print(a.capitalize())                         # I love 2d graphics, 3g technology and python
+
+
+
+.zfill() :-                                      " put zeros to handle numbers to count like ' 001, 011,111 '"
+                                                 " parameter is width of numbers 'nums of longest number'"
+
+   a, b, c, e = "1", "11", "111", "1111"
+   print(a.zfill(4))                             # 0001
+   print(b.zfill(4))                             # 0011
+   print(c.zfill(4))                             # 0111
+   print(e.zfill(4))                             # 1111
+
+
+
+.upper() :-                                      " Make all the strint upper case "
+ 
+   a = "i love python"
+   print(a.upper())                              # I LOVE PYTHOn
+
+   
+
+.lower() :-                                      " Make all the string lower case "
+
+   a = "I LOVE PYTHON"
+   print(a.lower())                              # i love python
+ 
+
+
+.split() :-                                                   
+.rsplit() :-                                           
+  split("Separatore", Number of Max split)
+  Convert data into Lists by splitting it by spaces by default or split it by Wanted Separatore.
+  Number of Max split it split the string into numbers you want and put the rest in one element.
+  rsplit() is the same as split() but it splits from the right.
+  
+
+   a = "I love Python and PHP"
+   print(a.split())                              # ['I', 'love', 'Python', 'and', 'PHP']
+   print(type(a.split()))                        # <class 'list'>
+    
+   b = "I-love-python-and-PHP"                   
+   print(b.split("-"))                           # ['I', 'love', 'python', 'and', 'PHP']  " '-' separatore " 
+
+   c = "I-love-python-and-PHP"
+   print(c.split("-", 2))                        # ['I', 'love', 'python-and-PHP']        " '-' separatore, 2 Max split "
+
+   e = "I love Python and PHP"
+   print(e.rsplit())                             # ['I', 'love', 'Python', 'and', 'PHP']
+
+   f = "I-love-python-and-PHP"                   
+   print(f.rsplit("-"))                          # ['I', 'love', 'python', 'and', 'PHP']
+
+   g = "I-love-python-and-PHP"
+   print(g.rsplit("-", 2))                       # ['I-love-python', 'and', 'PHP']
+
+
+
+.center() :-                                     " decorate the string. "
+  center(Width of string, "fill character" 'default is space')
+    
+   a = "python"
+   print(a.center(10))                           #   python     "2 spaces left and right"
+   print(a.center(10, "#"))                      # ##python##   "2 # left and right"
+ 
+
+
+.count() :-                                      " it shows you how many times does this word appear in the string "
+  count("text looking for", Start index, End index)
+
+   a = "I love python and PHP because PHP is Easy"
+   print(a.count("PHP"))                         # 2
+   print(a.count("PHP", 0, 25))                  # 1
+
+
+
+.swapcase() :-                                   " swaps capitals to smalls and vice versa."
+ 
+   a = "I LoVe PyTHon"
+   b = "i lOvE pYthOn"
+   print(a.swapcase())                           # i lOvE pYthON  "make upper case lower case and vice versa"
+   print(b.swapcase())                           # I LoVe PyTHoN 
+
+
+
+.stratswith() :-                                 "Asks if string Starts with wanted letter or not and answer with boolean exepretion"    
+  startswith("text looking for", Strat index, End index)
+ 
+   a = "I love Python"
+   print(a.startswith("I"))                      # True
+   print(a.startswith("s"))                      # False
+   print(a.startswith("P", 7, 12))               # True
+             
+
+
+.endswith():-                                   "Asks if string Ends with wanted letter or not and answer with boolean exepretion"    
+  endswith("text looking for", Strat index, End index)
+
+   a = "I love Python"
+   print(a.endswith("n"))                        # True
+   print(a.endswith("o"))                        # False
+   print(a.endswith("e", 2, 6))                  # True
+
+.index() :-                                      " Searching for text you want and give you the number of that text."        
+                                                 " but if it isn't exists it display error massage and didn't continue"
+  index("Substring", Start, End)
+
+   a = "I love python"
+   print(a.index("p"))                           # Index number 7
+   print(a.index("p", 0, 10))                    # Index number 7
+   print(a.index("p", 0, 5))                     # ValueError: substring not found "don't excute codes after this"
+
+
+
+.find() :-                                       " Same as index() but more good than it especialy in Errors"
+                                                 " but if it isn't exists it display -1 "
+  find("Substring", Start, End)
+
+   a = "I love python"
+   print(a.find("p"))                            # Index number 7
+   print(a.find("p", 0, 10))                     # Index number 7
+   print(a.find("p", 0, 5))                      # Index number -1
+
+
+
+.rjust() :-                                      " decorate the string just from Right. "
+.ljust() :-                                      " decorate the string just from Left. "
+  rjust(Width of string, "fill character" 'default is space') "make the last letter index = width"
+
+   a = "Python"
+   print(a.rjust(10))                            #     Python  "4 spaces in the right, index 'n' = 10"    
+   print(a.rjust(10,"#"))                        # ####Python  "4 # just in the right"
+   print(a.ljust(10))                            # Python      "4 spaces in the left"
+   print(a.ljust(10,"#"))                        # Python####  "4 # just in the left"
+   
+
+
+.splitlines() :-                                 " Convert each line into lists. "
+
+   a = """Frist line
+          second line
+          third line"""
+   print(a.splitlines())                         # ['Frist line', 'second line', 'third line']
+   print(type(a.splitlines()))                   # <class 'list'>
+
+   b = "First line\nsecond line\nthird line"
+   print(a.splitlines())                         # ['Frist line', 'second line', 'third line']
+
+
+
+.expandtabs() :-
+  expandtabs(width of the Tab)
+
+   a = "Hello\tworld\tI\tlove\tPython"
+   print(a.expandtabs(2))                        # Hello world I love  Python  "tab = 2 spaces here"
+
+
+
+.replace() :-
+  reoplace("String's Old value", "String's New value", count"nums of replacement")
+
+   a = "Hello One Two Tree One One"
+   print(a.replace("One", "1" ))                 # Hello 1 Two Tree 1 1
+   print(a.replace("One", "1", 2))               # Hello 1 Two Tree 1 One
+
+
+
+.join() :-                                       " It takes a list and return it as a string."
+  join(Iterable)
+  print("separatore".join(lists name))
+
+   a = ["I", "love", "Python"]
+   print("-".join(a))                            # I-love-Python
+   print(" ".join(a))                            # I love Python
+   print(type(" ".join(a)))                      # <class 'str'>
+
+                    -----------------------------------------------------
+                        Some Functoins to check boolean exeprtions:-
+
+.istitle() :-                                    " ask if it's a title or not."           
+
+   one = "I Love Python And 3G"
+   two = "I Love Python And 3g"
+   print(one.istitle())                           # True 		
+   print(two.istitle())                           # False   "g is small"
+
+
+
+.isspace() :-                                    " ask if it's a space or not."
+
+   three = " "
+   four = ""
+   print(three.isspace())                        # True
+   print(four.isspace())                         # False
+
+
+
+.islower() :-                                    " ask if it's lowercase or not."
+  
+   five = "i love python"
+   six = "I Love Python"
+   print(five.islower())                         # True
+   print(six.islower())                          # False
+
+
+
+.isidentifier() :-                               " ask if it can be used as a identifier or not."
+
+   seven = "python_elzero"
+   eight = "PythonElzero100"
+   nine = "Python--Elzero100"
+   print(seven.isidentifier())                   # True 
+   print(eight.isidentifier())                   # True
+   print(nine.isidentifier())                    # False
+
+
+
+.isalpha() :-                                    " ask if it's alphabetacal or not."
+ 
+   ten = "AaaaBbbb"
+   eleven = "AaaaBbbb100"
+   print(ten.isalpha())                          # True    "alphabetecal"
+   print(eleven.isalpha())                       # False   "not alphabetecal"
+
+
+
+.isalnum() :-                                    " ask if it's alphabetecal and number or not."
+
+   twelve ="AaaaBbbb"
+   thirteen = "AaaaBbbb100"
+   print(twelve.isalnum())                       # True    "alphabetecal"
+   print(thirteen.isalnum())                     # True    "alphabetecal with numbers"
+------------------------------------------------------------------------------------------------------------------------------
+String Formatting Old Ways :-                    " best than Concatination 'good at linking numbers with strings' "
+
+ print("text %s text %d text %f" % (String variable , number variable, float variable))
+ %s => place holder of whole String    >> %.numbers   like" %.3s " > String with 3 letters only.
+ %d => place holder of whole Number
+ %f => place holder of whole Float     >> %.numberf   like" %.2f " > Floating numb with 2 digits after point.
+
+   name = "Osama"
+   age = 20
+   rank = 10
+   print("my name is: " + name)                                 # my name is: Osama
+   print("My Name is: " + name, "and My Age is: " + age)        # TypeError: can only concatenate str (not "int") to str
+   print("My Name is: %s" % "Osama")                            # My Name is: Osama
+   print("My Name is: %s" % "name")                             # My Name is: Osama
+   print("My Name is: %s, and My Age is: %d" % (name, age))     # My Name is: Osama, and My Age is: 20
+   pritn("My Name is: %s, My Age is: %d, and My Rank is: %f" % (name, age, rank))    # My Name is: Osama, My Age is: 20, and My Rank is: 10.000000
+   pritn("My Name is: %s, My Age is: %d, and My Rank is: %.3f" % (name, age, rank))  # My Name is: Osama, My Age is: 20, and My Rank is: 10.000
+
+
+Truncate String :-
+
+   mylongString = "Hello Peoples of Python developers I Love you All"
+   print("Massage is %s" % mylongString)         # Massage is Hello Peoples of Python developers I Love you All
+   print("Massage is %.5s" % mylongString)       # Massage is Hello
+
+
+String Formatting New Ways :-                    " 
+ 
+ print("text{} , text{} and text{}".format(var1, var2, var3))
+ {:s} => place holder of whole String  >> {:.numbers}    like" {:.5S} " > String with 5 letters only.
+ {:d} => place holder of whole Number
+ {:f} => place holder of whole Float   >> {:.numberf}    like" {:.3f} " > Floating numb with 3 digits after point.
+
+   name = "OsaMa"          
+   age = 20 
+   rank = 10
+   print("My Name is: {}".format("OsaMa"))                      # My Name is: OsaMa                    
+   print("My Name is: {}".format(name))                         # My Name is: OsaMa
+   print("My Name is: {}, and My Age is: {}".format(name, age)) # My Name is: OsaMa, and My Age is: 20
+   print("My Name is: {}, My Age is: {}, and My Rank is: {}".format(name, age, rank))    # My Name is: OsaMa, My Age is: 20, and My Rank is: 10
+   print("My Name is: {:s}, My Age is: {:d}, and My Rank is: {:.2f}".format(name, age, rank))    # My Name is: OsaMa, My Agee is: 20, and My Rank is: 10.00
+
+
+Truncate String :-
+
+   mylongString = "Hello Peoples of Python developers I Love you All"
+   print("Massage is {:s}".format(mylongString))           # Massage is Hello Peoples of Python developers I Love you All
+   print("Massage is {:.5s}".format(mylongString))         # Massage is Hello
+
+
+
+Formatting Money :-
+
+   myMoney = 500162350198
+   print("My Money in Bank is: {:d}".format(myMoney))        # 500162350198
+   print("My Money in Bank is: {:_d}".format(myMoney))       # 500_162_350_198
+   print("My Money in Bank is: {:,d}".format(myMoney))       # 500,162,350,198
+
+
+
+Rearrange Items :-
+
+   a, b, c, = "one", "two", "three"
+   print("Hello {} {} {}".format(a, b, c))                 # Hello one two three
+   print("Hello {1} {2} {0}".format(a, b, c))              # Hello two three one
+   
+   x, y, z = 10, 20,30
+   print("Hello {} {} {}".format(x, y, z))                 # 10 20 30
+   print("Hello {1:d} {2:d} {0:d}".format(x, y, z))        # 20 30 10
+   print("Hello {2:.2f} {0:.2f} {1:.2f}".format(x, y, z))  # 30.00 10.00 20.00
+
+
+
+Format in version 3.6+ :-
+
+   myName = "OsaMa"
+   myAge = 20
+   print(f"My Name is: {myName} and My Age is: {myAge}")   # My Name is: OsaMa and My Age is: 20
+-------------------------------------------------------------------------------------------------------------------------
+Integers :-
+
+   print(type(1))                                # <class 'int'>
+   print(type(100))                              # <class 'int'>
+   print(type(-100))                             # <class 'int'>
+   print(type(0))                                # <class 'int'>
+   print(type(-1))                               # <class 'int'>
+
+
+
+Float :-
+
+   print(type(1.500))                            # <class 'float'>
+   print(type(100.99))                           # <class 'float'>
+   print(type(-10.99))                           # <class 'float'>
+   print(type(-0.99))                            # <class 'float'>
+   print(type(0.99))                             # <class 'float'>
+
+
+
+Complex :-
+ .real
+ .imag
+
+   myComplexNumber = 5+6j
+   print(type(myComplexNumber))                                 # <class 'complex'>
+   print("Real part is: {}".format(myComplexNumber.real))       # Real part is: 5.0
+   print("Imaginary part is: {}".format(myComplexNumber.imag))  # Imaginary part is: 6.0
+
+
+
+[1] You Can Convert Integers to Floats or Complex.
+[2] You Can Convert Floats to Integers or Complex. 
+[3] You Can't Convert Complex to Integers or Floats.
+
+   print(100)                                    # 100
+   print(float(100))                             # 100.0
+   print(complex(100))                           # (100+0j)
+
+   print(10.50)                                  # 10.5
+   print(Int(10.50))                             # 10
+   print(complex(10.50))                         # (10.5+0j)
+
+   print(10+9j)                                  # (10.5+9j)                       
+   print(int(10+9j))                             # Can't Convert it.
+------------------------------------------------------------------------------------------------------------
+Addition :-
+ 
+   print(10 + 30)                                # 40
+   print(-10 + 20)                               # 10
+   print(1 + 2.66)                               # 3.66
+   print(1.2 + 1.2)                              # 2.4
+
+
+
+Subtraction :-
+  
+   print(60 - 30)                                # 30
+   print(-30 -20)                                # -50
+   print(-30 - -20)                              # -10
+   print(5.66 - 3.44)                            # 2.22
+
+
+
+Multiplication :-
+
+   print(10 * 3)                                 # 30
+   print(5 + 10 * 100)                           # 1005
+   print((5 + 10) * 100)                         # 1500
+   
+
+
+Division :-
+
+   print(100 / 20)                               # 5.0
+   print(int(100 / 20))                          # 5
+
+
+
+Modulus :-                                       " Reminder or The Rest "
+
+   print(8 % 2)                                  # 0
+   print(9 % 2)                                  # 1
+   print(11 % 4)                                 # 3  
+ 
+
+
+Exoponent :-
+  
+   print(2 ** 5)                                 # 32
+   print(5 ** 4)                                 # 625
+   
+
+
+Floor Division :-                                " Giving you just the Integer Number" 
+ 
+   print(100 // 20)                              # 5
+   print(119 // 20)                              # 5
+   print(120 // 20)                              # 6
+   print(140 // 20)                              # 7
+------------------------------------------------------------------------------------------------------------------
+Lists :-
+
+ List Items are enclosed in square brackets.
+ List are Ordered, To Use Index to access Item.
+ List are Mutable => Add, Edit and Delete.
+ List Items are Not Unique.
+ List can have Different Data Types.
+ print(*list name) mean Unpacking for all elements in the list."print each element alone" 
+ 
+   myList = ["One", "Two", "One", 1, 100.5, True]
+   print(myList)                                           # ['One', 'Two', 'One', 1, 100.5, True]
+   print(*mylist)                                          # One Two One 1 100.5 True
+   print(myList[1])                                        # Two
+   print(myList[-1])                                       # True
+   print(myList[-3])                                       # 1
+   print(myList[1:4])                                      # ['Two', 'One', 1]
+   myList[1] = 2                                           # Edit the element num 2 in the list.
+   print(myList)                                           # ['One', 2, 'One', 1, 100.5, True]
+   myList[0:2] = ["a", "b"]                                # Edit first 2 elements.
+   print(myList)                                           # ['a', 'b', 'One', 1, 100.5, True]
+   myList[0:3] = ["A"]                                     # Edit first 3 elements.
+   print(myList)                                           # ['A', 1, 100.5, True]
+   
+
+
+.append() :-                                               " add Items to the end of a list."
+
+   myFriends = ["Ali", "Ahmed", "Sayed"]
+   myFriends.append("Alaa")
+   myFriends.append("100")
+   myFriends.append("10.5")
+   myFriends.append("True")
+   print(myFriends)                                        # ['Ali', 'Ahmed', 'Sayed', 'Alaa', , '100', '10.5', 'True']
+   
+   myFriends = ["Ali", "Ahmed", "Sayed"]
+   myOldFriends = ["Abdo", "Hytham", "Mohammed"]
+   myFriends.append(myOldFriends)                          # It add the list as one Item. 
+   print(myFriends)                                        # ['Ali', 'Ahmed', 'Sayed', ['Abdo', 'Hytham', 'Mohammed']]
+   print(myFriends[3])                                     # ['Abdo', 'Hytham', 'Mohammed']
+   print(myFriends[3][2])                                  # Mohammed   "List in List"
+
+
+
+.extend() :-
+  
+   a = [1, 2, 3, 4]
+   b = [A, B, C, D]
+   a.extend(b) 
+   print(a)                                                # [1, 2, 3, 4, 'A', 'B', 'C', 'D']
+
+
+
+.remove() :-                                                
+    
+   x = [1, 2, 3, 4, 5, "Ali", True, "Ali", "Ali"]
+   x.remove("Ali")
+   print(x)
+
+
+
+.sort() :-                                                 " Only Sorts one type of Data."
+
+   y = [1, 2, 100, 120, -10, 17, 29]
+   y.sort()
+   print(y)                                                # [-10, 1, 2, 17, 29, 100, 120]
+   z = ["Z", "A", "J", "X"]
+   z.sort(reverse=True)
+   print(z)                                                # ['Z', 'X', 'J', 'A']
+
+
+
+.reverse() :-                                              " It Just reverse the Sorting."
+
+   z = [10, 1, 9, 80, 100, "Ali", 100]
+   z.reverse()
+   print(z)                                                # [100, 'Ali', 100, 80, 9, 1, 10]  
+
+
+
+.clear() :-
+  
+   a = [1, 2, 3, 4]
+   a.clear()
+   print(a)                                      # []
+
+
+
+.copy() :-                                       " shallow copy."
+
+   b  = [1, 2, 3, 4]
+   c = b.copy()
+   print(b)                                      # [1, 2, 3, 4]
+   print(c)                                      # [1, 2, 3, 4]
+   b.append(5)
+   print(b)                                      # [1, 2, 3, 4, 5]
+   print(c)                                      # [1, 2, 3, 4]
+
+
+
+.count() :-
+
+   d = [1, 2, 3, 4, 3, 9, 10, 1, 2, 1]
+   print(d.count(1))                             # 3
+
+
+
+.index() :-
+ 
+   a = ["Ahmed", "Ali", "Mohammed", "sayed", "Ramy", ]
+   print(a.index("Ramy"))                        # 4
+
+
+
+.insert() :-                                     " inserts objects before index."
+  insert(index, object)
+ 
+   f = [1, 2, 3, 4, 5, "A", "B" ]
+   f.insert(0, "test")
+   f.insert(-1, "test")
+   print(f)                                      # ['test', 1, 2, 3, 4, 5, 'A','test', 'B']
+
+
+  
+.pop() :-                                        " Return the value of the index you put."
+
+   f = [1, 2, 3, 4, 5, "A", "B" ]
+   print(f.pop(-3))                              # 5
+---------------------------------------------------------------------------------------------------
+Tuples :-
+
+ Tuples Items are enclosed in Parentheses.
+ You can Remove the parentheses if you want.
+ Tuples Are Ordered to use Index to access Items.
+ Tuples are Immutable => you can't Add or Delete.
+ Tuple Items are Not Unique.
+ Tuple can have Different Data Types.
+ Operators used in Strings and Lists Available in Tuples.
+
+ 
+   myAwesomeTupleOne = ("Ali" , "Ahmed")
+   myAwesomeTupleTwo = "Ali", "Ahmed"
+   print(myAwesomeTupleOne)                      # ('Ali', 'Ahmed')
+   print(myAwesomeTupleTwo)                      # ('Ali', 'Ahmed')
+   print(type(myAwesomeTupleOne))                # <class 'tuple'>
+   
+   myAwesomeTupleThree = (1, 2, 3, 4, 5)
+   print(myAwesomeTupleThree[0])                 # 1
+   print(myAwesomeTupleThree[-3])                # 3
+   
+   myAwesomeTupleFour = (1, 2, 3, 4, 5)
+   myAwesomeTupleFour[2] = []
+   print(myAwesomeTupleFour)                     # TypeError: 'tuple' object does not support item assignment.
+   myAwesometupleFour[2] = ["Three"] 
+   print(myAwesomeTupleFour)                     # TypeError: 'tuple' object does not support item assignment.
+
+   myAwesomeTupleFive = ("Ahmed", "Ahmed", 1, 2, 3, 100.5, True)
+   print(myAwesomeTupleFive[-1])                 # True  
+   print(myAwesomeTupleFive[1])                  # Ahmed
+  
+
+Tuples With One Element :-
+   myTuple1 = ("Python",)
+   myTuple2 = "Python",
+   print(type(myTuple1))                         # <class 'tuple'>
+   print(type(myTuple2))                         # <class 'tuple'>
+
+
+
+Tuples Concatenation :-
+   a = (1, 2, 3, 4)
+   b = (5, 6)
+   c = a + b
+   d = a + ("A", "B", True) + b
+   print(c)                                      # (1, 2, 3, 4, 5, 6)
+   print(d)                                      # (1, 2, 3, 4, 'A', 'B', True, 5, 6)
+
+
+
+Tuple, List, String Repeat (*)                   " we use it as a separator."
+   myString = "Python"
+   myList = [1, 2]
+   myTuple = ("A", "B")
+   print(myString * 6)                           # PythonPythonPythonPythonPythonPython
+   print(myList * 6)                             # [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
+   print(myTuple * 6)                            # ('A', 'B', 'A', 'B', 'A', 'B', 'A', 'B', 'A', 'B', 'A', 'B')
+
+
+
+.count() :-
+   a = (1, 3, 7, 8, 2, 6, 5, 8)
+   print(a.count(8))                             # 2
+
+
+
+.index() :-
+   b = (1, 3, 7, 8, 2, 6, 5, 8)
+   print(a.index(7))                             # 2
+   print(f"The pisition is : {b.index(7)}")      # The position is : 2
+
+
+
+Tuple Destruct :-
+   a = ("A", "B","C")
+   x, y, z = a
+   print(x)                                      # A
+   print(y)                                      # B
+   print(z)                                      # C
+  
+   a = ("A", "B", 4, "C")
+   x, y, _, z = a                                " Underscore  ignoring the value here
+   print(x)                                      # A
+   print(y)                                      # B
+   print(z)                                      # C
+-----------------------------------------------------------------------------------------------------------------
+set :-
+ set Items are enclosed in Curly Braces.
+ set Items are not Ordered and not Indexed.
+ set Indexing and Sclicing can't be done.
+ set has only Immutable Data types (Numbers, Strings, Tuples) List and Dict are Not.
+ set Items is Unique. "Removing repeatative Items"
+ Hashing is a mechanism allows you to search quickly for objects in computer memory.
+
+
+   mySetOne = {"Python", "Ali", 100}
+   print(mySetOne)                               # {'Ali', 100, 'Python'}  "First Run"
+                                                 # {'Python', 100, 'Ali'}  "Second Run" an go on.
+   print(mySetOne[0])                            # TypeError: 'set' object is not subscriptable
+   print(mySetOne[0:2])                          # TypeError: 'set' object is not subscriptable
+ 
+   mySetTwo = {"Ali", 100, 10.5, True, [1, 2, 3]}
+   print(mySetTwo)                               # TypeError: unhashable type: 'list'
+   
+   mySetThree = {"Ali", 100, 10.5, True, (1, 2, 3)}
+   print(mySetThree)                             # {True, 100, 'Ali', 10.5, (1, 2, 3)} 
+ 
+   mySetFour = {1, 2, "Ali", "One", "Ali", 1}
+   print(mySetFour)                              # {1, 'Ali', 2, 'One'}
+       
+     
+
+.clear() :-
+   
+   a = {1, 2, 3, 4}
+   a.clear()
+   print(a)                                      # set()
+
+
+
+.union() :-                                      " Adding the sets to each other."
+
+   a = {"one", "two", "three"}
+   b = {"1", "2", "3"}
+   c = {"zero", "0"}
+   print(a | b | c)                              # {'three', '3', '0', '2', 'two', 'one', 'zero', '1'}
+   print(a.union(b, c))                          # {'three', '3', '0', '2', 'two', 'one', 'zero', '1'}
+
+
+
+.add() :-                                        " add one element at Each time."
+
+   a = {1, 2, 3, 4}
+   a.add(5)
+   a.add(6)
+   print(a)                                      # {1, 2, 3, 4, 5}
+
+  
+
+.copy() :-                                       " shallow copy"
+
+   a = {1, 2, 3, 4}
+   b = a.copy()
+   print(a)                                      # {1, 2, 3, 4}
+   print(b)                                      # {1, 2, 3, 4}
+   a.add(6)
+   print(a)                                      # {1, 2, 3, 4, 6} 
+   print(b)                                      # {1, 2, 3, 4}
+
+ 
+
+.remove() :-                                     " Give Errors if element doesn't exist."
+
+   a = {1, 2, 3, 4}
+   a.remove(1)
+   print(a)                                      # {2, 3, 4}
+   a.remove(5)                                   # KeyError: 5
+
+
+
+.discard() :-                                    " Did't give Errors if element doesn't exist."
+
+   a = {1, 2, 3, 4}
+   a.discard(1)
+   print(a)                                      # {2, 3, 4}
+   a.discard(5)                                   
+   print(a)                                      # {2, 3, 4}
+
+
+
+.pop() :-                                        " Give you a random element."
+
+   a = {"A", True, 1, 2, 3, 4, 5}
+   print(a.pop())                                # A
+
+
+
+.update() :-                                     " Same as union and removes repeating elements."
+
+   a = {1, 2, 3}
+   b = {1, "A", "B", 2}
+   a.update(["Html", "Css"])                     # Updating a set from a list.
+   a.update(b)
+   print(a)                                      # {1, 2, 3, 'Html', 'A', 'Css', 'B'}
+
+
+   
+.difference() :-                                 " show the elements that exist in first set and not in the second set."
+
+   a = {1, 2, 3, 4}
+   b = {1, 2, "Ali", "Ahmed"}
+   print(a)                                      # {1, 2, 3, 4}
+   print(a.difference(b))                        # {3, 4}
+   print(a - b)                                  # {3, 4}  "It's another way"
+   print(a)                                      # {1, 2, 3, 4}
+
+
+
+.difference_update() :-                          " Get the Difference and update the first set to it."
+
+   a = {1, 2, 3, 4}
+   b = {1, 2, "Ali", "Ahmed"}
+   print(a)                                      # {1, 2, 3, 4}
+   a.difference_update(b)   
+   print(a)                                      # {3, 4}
+
+
+
+.intersection() :-                               " show the repeated elements that exist in the first and second sets."
+
+   a = {1, 2, 3, 4, "x"}
+   b = {"Ali", "x", 2}
+   print(a)                                      # {1, 2, 3, 4, 'x'}
+   print(a.intersection(b))                      # {2, 'x'}
+   print(a & b)                                  # {2, 'x'}  "It's another way"
+   print(a)                                      # {1, 2, 3, 4, 'x'}
+
+
+
+.intersection_update() :-                        " Get repeated elements in the two sets and update the first set to it."
+
+   a = {1, 2, 3, 4, "x"}
+   b = {"Ali", "x", 2}
+   print(a)                                      # {1, 2, 3, 4, 'x'}
+   a.intersection_update(b)                      
+   print(a)                                      # {2, 'x'}
+
+
+
+.symmetric_difference() :-                       " Show unrepeated elements in the 2 sets."
+ 
+   a = {1, 2, 3, 4, 5, "X"}
+   b = {"Ali", "Zero", 1, 2, 4}
+   print(a)                                      # {1, 2, 3, 4, 5, 'X'}
+   print(a.symmetric_difference(b))              # {3, 'X', 5, 'Ali', 'Zero'}
+   print(a ^ b)                                  # {3, 'X', 5, 'Ali', 'Zero'} "It's another way"
+   print(a)                                      # {1, 2, 3, 4, 5, 'X'}
+
+
+
+.symmetric_difference_update() :-                " Get unrepeated elements in the 2 sets and update the first set to it."
+
+   a = {1, 2, 3, 4, 5, "X"}
+   b = {"Ali", "Zero", 1, 2, 4}
+   print(a)                                      # {1, 2, 3, 4, 5, 'X'}
+   a.symmetric_difference_update(b)
+   print(a)                                      # {3, 'X', 5, 'Ali', 'Zero'}
+
+            -----------------------------------------------------------
+                  Some Functoins to check boolean exeprtions:-
+
+.issupereset() :-                                " ask if (set2) is exist in set1 or not." 
+
+   a = {1, 2, 3, 4}
+   b = {1, 2, 3}
+   c = {1, 2, 3, 4, 5}
+   print(a.issuperset(c))                        # False
+   print(a.issuperset(b))                        # True
+ 
+
+
+.isubset() :-                                    " ask if set1 is exist in (set2) or not." 
+
+   a = {1, 2, 3, 4}
+   b = {1, 2, 3}
+   c = {1, 2, 3, 4, 5}
+   print(a.issubset(c))                          # True
+   print(a.issubset(b))                          # False
+
+
+
+.isdisjoint() :-                                 " ask if it's separator or not."
+
+   a = {1, 2, 3, 4}
+   b = {1, 2, 3}
+   c = {10, 11, 12}
+   print(a.isdisjoint(b))                        # False
+   print(a.isdisjoint(c))                        # True
+---------------------------------------------------------------------------------------------------
+Dictionary :-
+ Dict Items are enclosed in Curly Braces.
+ Dict Items are contains {Key : Value}. "separate with ,"
+ Dict Key need to be Immutable => (Number, String, Tuple) List not allowd.
+ Dict Key need to be unique.
+ Dict Value can have any Data types. "if there are more than one it will take the last value"
+ Dict isn't ordered you access it's element with the Key.
+
+ print(Dict name[kay])                 " to print the value of the key."
+ print(Dict name.get("key"))           " to print the value of the key." 
+ Print(Dict name[key or first Dict][key of second key])         " print value of a Dict inside the first Dict."
+ print(Dict name.keys())               " to print all Dict Keys."                  
+ print(Dict name.values())             " to print all Dict Values."
+
+
+   user = {
+       "name" : "Ahemd",
+       "age" : 20,
+       "country" : "Egypt",
+       "skills" : ["Python", "Data analytics"],
+       "rating" : 10.5
+   }
+   print(user)                    # {'name': 'Ahemd', 'age': 20, 'country': 'Egypt', 'skills': ['Python', 'Data analytics'], 'rating': 10.5}
+   print(user["country"])         # Egypt
+   print(user.get("country"))     # Egypt
+   print(user.keys())             # dict_keys(['name', 'age', 'country', 'skills', 'rating'])
+   print(user.values())           # dict_values(['Ahemd', 20, 'Egypt', ['Python', 'Data analytics'], 10.5])
+
+
+ 
+Two Dimensional dictionary :-          "Nested Dictionary","Key : value'Dict'"
+
+   langauges = {
+       "One" : {
+           "name" : "Html",
+           "Progress" : "80%"
+       },
+       "Two": {
+           "name" : "Css",
+           "Progress" : "90%"
+       },
+       "Three" : {
+           "name" : "Js",
+           "Progress" : "90%"
+       }
+   }
+   print(langauges)                    # {'One': {'name': 'Html', 'Progress': '80%'}, 'Two': {'name': 'Css', 'Progress': '90%'}, 'Three': {'name': 'Js', 'Progress': '90%'}}
+   print(langauges["Three"])           # {'name': 'Js', 'Progress': '90%'}
+   print(langauges["One"]["Progress"]) # 80%
+   print(len(langauges))               # 3
+   print(len(langauges["Two"]))        # 2
+
+Use variable to make a Dict :-
+
+   frameWorkOne = {
+           "name" : "VueJs",
+           "Progress" : "80%"
+   }
+   frameWorkTwo = {
+           "name" : "ReactJs",
+           "Progress" : "90%"
+   }
+   frameWorkThree = {
+           "name" : "Angular",
+           "Progress" : "90%"
+   }
+   allFrameWorks = {
+       "One" : frameWorkOne,
+       "Two" : frameWorkTwo,
+       "Tree" : frameWorkThree
+   }
+   print(allFrameWorks)  # {'One': {'name': 'VueJs', 'Progress': '80%'}, 'Two': {'name': 'ReactJs', 'Progress': '90%'}, 'Tree': {'name': 'Angular', 'Progress': '90%'}}
+
+
+
+
+.clear() :-
+  
+   user = {
+       "name" : "Ahmed"
+   }
+   print(user)               # {'name': 'Ahmed'}
+   user.clear()              
+   print(user)               # {}
+
+
+
+.update() :-
+ .update({"key" : "value"})
+ 
+   member = {
+       "name" : "Ahmed"
+   }
+   member["age"] = 20                       # another way to add an Item.
+   print(member)                            # {'name': 'Ahmed', 'age': 20}
+   member.update({"country" : "Egypt"})     # our method to update thr Dict. you can add more by separate by ','.
+   print(member)                            # {'name': 'Ahmed', 'age': 20, 'country': 'Egypt'}
+
+
+
+.copy() :-                               " shallow copy."
+
+   main = {
+       "name" : "Ahmed" 
+   }
+   b = main.copy()
+   print(b)                              # {'name': 'Ahmed'}
+   main.update({"skills" : "Fighting"})
+   print(main)                           # {'name': 'Ahmed', 'skills': 'Fighting'}
+   print(b)                              # {'name': 'Ahmed'}
+   
+
+
+.setdefault() :-              # found key it will give it to you, didn't found the key it will give you the value you give it."
+ .setdefault("key", "value")
+
+   user = {
+       "name" : "Ahmed"
+   }
+   print(user)                           # {'name': 'Ahmed'}
+   print(user.setdefault("name", "Ali")) # Ahmed
+   print(user.setdefault("age", 20))     # 20
+   print(user.setdefault("skill"))       # None
+   print(user)                           # {'name': 'Ahmed', 'age': 20, 'skill': None}
+
+
+
+.popitem() :-                 " show you last element you added to the Dict."
+
+   from traceback import print_tb
+
+
+   member = {
+       "name" : "Ahmed",
+       "skill" : "ps4"
+   }
+   print(member)               # {'name': 'Ahmed', 'skill': 'ps4'}
+   member.update({"age": 20})
+   print(member.popitem())     # ('age', 20)
+
+
+
+.items() :-              " save every change, and give the Inf in List >> Tuple elements [(),(),()]."
+
+   view = {
+       "name" : "Ahmed",
+       "skill" : "ps4"
+   }
+   allItems = view.items()
+   print(view)               # {'name': 'Ahmed', 'skill': 'ps4'}
+   view["age"] = 20
+   print(allItems)           # dict_items([('name', 'Ahmed'), ('skill', 'ps4'), ('age', 20)])
+
+
+
+.fromekeys() :-                   " make a Dict from two tuples."
+ .fromkeys(tuple1 as a key, tuple2 as a value) 
+
+   a = ("MyKeyOne", "MyKeyTwo", "MyKeyThree")
+   b = "x"
+   print(dict.fromkeys(a, b))                   # {'MyKeyOne': 'x', 'MyKeyTwo': 'x', 'MyKeyThree': 'x'}
+---------------------------------------------------------------------------------------------------------
+Boolean :-
+
+   name = " "
+   print(name.isspace())                         # True
+
+   print(100 > 200)                              # False
+
+   print(100 > 90)                               # True
+  
+
+
+bool() :-                                        " Show if True or False."
+
+   print(bool("Python"))                         # True
+   print(bool(100))                              # True
+   print(bool(100))                              # True
+   print(bool(10.5))                             # True
+   print(bool(True))                             # True
+   print(bool([1, 2, 3, 4, 5]))                  # True
+   print(bool((1, 2, 3, 4, 5)))                  # True
+   print(bool({1, 2, 3, 4, 5}))                  # True
+         
+   print(bool(""))                               # False
+   print(bool(''))                               # False
+   print(bool(0))                                # False
+   print(bool(False))                            # False
+   print(bool([]))                               # False
+   print(bool({}))                               # False
+   print(bool(()))                               # False
+   print(bool(None))                             # False
+
+
+
+AND :-                                           " Ask if all conditions are True to do the function."
+
+   age = 20
+   country = "Egypt"
+   rank = 5
+   print(age > 16 and country == "Egypt" and rank > 3)     # True
+   print(age > 16 and country == "KSA" and rank > 3)       # False
+
+
+OR :-                                            " Ask if one condition is True to do the function."
+
+   age = 20
+   country = "Egypt"
+   rank = 5
+   print(age > 16 or country == "Egypt" or rank > 3)       # True
+   print(age > 25 or country == "KSA" or rank > 7)         # False
+
+
+
+NOT :-                                           " Reverse the boolean exepresion."
+ 
+   age = 20
+   print(age > 15)                               # True
+   print(not age > 15)                           # False
+-----------------------------------------------------------------------------------------------------
+Assignments operators :-
+ variable one = self [operator] variable two
+ variable one [operator]= variable two
+
+
+Addition "+=" :-                                 " It's same as 'x = x + y'."
+
+   x = 10 
+   y = 20 
+   x += y                                        # x = x + y
+   print(x)                                      # 30
+
+
+
+Subtraction "-=" :-                              " It's same as 'x = x - y'." 
+
+   x = 10 
+   y = 20
+   x -= y                                        # x = x - y
+   print(x)                                      # -10
+
+
+
+Multiplication "*=" :-                           " It's same as 'x = x * y'." 
+
+   x = 10
+   y = 20    
+   x *= y                                        # x = x * y
+   print(x)                                      # 200
+   
+
+
+Division "/=" :-                                 " It's same as 'x = x / y'."
+
+   x = 10 
+   y = 20 
+   x /= y                                        # x = x / y
+   print(x)                                      # 0.5
+
+
+
+Modulus "%=" :-                                 " Reminder or The Rest, like 'x = x % y' "
+
+   x = 10
+   y = 20
+   x %= y                                        # x = x % y
+   print(x)                                      # 10
+ 
+
+
+Exoponent "**=" :-                               " It's same as 'x = x ** y'."
+
+   x = 2
+   y = 3
+   x **= y                                       # x = x ** y
+   print(x)                                      # 8
+   
+
+
+Floor Division :-                                " Giving you just the Integer Number, 'x = x // y'." 
+ 
+   x = 110 
+   y = 20
+   x //= y                                       # x = x // y
+   print(x)                                      # 5
+------------------------------------------------------------------------------------------------------
+Comparison Operators :-
+
+Equal == :-
+
+   print(100 == 100)         # True
+   print(200 == 200.00)      # True
+   print(300 == 400)         # False
+
+
+
+Not Equal != :-
+
+   print(100 != 100)         # False
+   print(200 != 200.00)      # False
+   print(300 != 400)         # True
+
+
+
+Greater Than > :-
+ 
+   print(100 > 100)          # False
+   print(200 > 200.00)       # False
+   print(300 > 400)          # False
+   print(500 > 400)          # True
+
+
+
+Less Than < :-
+
+   print(100 < 100)          # False
+   print(200 < 200.00)       # False
+   print(200 < 100)          # False 
+   print(300 < 400)          # True   
+
+
+
+Greater Than Or Equal >= :-
+ 
+   print(100 >= 100)         # True
+   print(200 >= 200.00)      # True
+   print(500 >= 400)         # True
+   print(300 >= 400)         # False
+
+
+
+Less Than Or Equal <= :-
+ 
+   print(100 <= 100)         # True
+   print(200 <= 200.00)      # True
+   print(300 <= 400)         # True
+   print(500 <= 400)         # False
+---------------------------------------------------------------------
+str() :-
+
+   a = 10                    # a = 10.0  >>  <class 'float'>
+   print(type(a))            # <class 'int'>
+   print(type(str(a)))       # <class 'str'>
+
+
+
+tuple() :-
+   
+   a = "Ahmed"               # String           
+   b = [1, 2, 3, 4, 5]       # List
+   c = {"A", "B", "C"}       # Set
+   d = {"A" : 1, "B" : 2}    # Dict
+   print(tuple(a))           # ('A', 'h', 'm', 'e', 'd')
+   print(tuple(b))           # (1, 2, 3, 4, 5)
+   print(tuple(c))           # ('A', 'B', 'C')
+   print(tuple(d))           # ('A', 'B')        " Just take Keys."
+   print(tuple(10))          # TypeError: 'int' object is not iterable
+
+
+
+list() :-
+ 
+   a = "Ahmed"               # String           
+   b = (1, 2, 3, 4, 5)       # Tuple
+   c = {"A", "B", "C"}       # Set
+   d = {"A" : 1, "B" : 2}    # Dict
+   print(list(a))            # ['A', 'h', 'm', 'e', 'd']        
+   print(list(b))            # [1, 2, 3, 4, 5]
+   print(list(c))            # ['B', 'C', 'A']
+   print(list(d))            # ['A', 'B']        " Just take Keys."
+   print(list(10))           # TypeError: 'int' object is not iterable
+
+
+
+set() :-
+
+   a = "Ahmed"               # String           
+   b = (1, 2, 3, 4, 5)       # Tuple
+   c = ["A", "B", "C"]       # list
+   d = {"A" : 1, "B" : 2}    # Dict
+   print(set(a))             # {'A', 'm', 'h', 'd', 'e'}          
+   print(set(b))             # {1, 2, 3, 4, 5}
+   print(set(c))             # {'B', 'C', 'A'}
+   print(set(d))             # {'B', 'A'}        " Just take Keys."
+   print(set(10))            # TypeError: 'int' object is not iterable
+
+   
+
+dict() :-
+
+   a = "Ahmed"                         # String           
+   b = (1, 2, 3, 4, 5)                 # Tuple
+   e = (("A", 1), ("B", 2), ("C", 3))  # Nested Tuple, has key and value.
+   c = ["A", "B", "C"]                 # list
+   f = [["A", 1], ["B", 2], ["C", 3]]  # Nested List, has key and value.
+   d = {"A", "B"}                      # Set
+   g = {{"A", 1}, {"B", 2}, {"C", 3}}  # Nested Set
+   print(dict(a))                      # Error No key no Value.
+   print(dict(b))                      # Error No Key no Value.
+   print(dict(e))                      # {'A': 1, 'B': 2, 'C': 3}
+   print(dict(c))                      # Error No Key no Value.        
+   print(dict(f))                      # {'A': 1, 'B': 2, 'C': 3}
+   print(dict(d))                      # Error No Key no Value.
+   print(dict(g))                      # TypeError: unhashable type: 'set'
+   print(dict(10))                     # TypeError: 'int' object is not iterable      
+
+   e = (("A", 1), ("B", 2), ("C", 3))  # Nested Tuple, has key and value.
+   f = [["A", 1], ["B", 2], ["C", 3]]  # Nested List, has key and value.
+   print(dict(e))                      # {'A': 1, 'B': 2, 'C': 3}
+   print(dict(f))                      # {'A': 1, 'B': 2, 'C': 3}   
+-----------------------------------------------------------------------------------
+User Input :-
+
+   fName = input('What\'s your first name?')     # user put first name. "   OsAma "     
+   mName = input('What\'s your middle name?')    # user put middle name. " FaThy   "
+   lName = input('What\'s your last name?')      # user put last name.   " MoHammed "
+   fName = fName.strip().capitalize()            # capitalize and remove any spaces.          
+   mName = mName.strip().capitalize()            # capitalize and remove any spaces.
+   lName = lName.strip().capitalize()            # capitalize and remove any spaces.
+   print(f"Hello {fName}. {mName:.1s} {lName}")  # Just show first letter of mName.
+         RESAULT >> Osama F. Mohammed             
+----------------------------------------------------------------------------------------------------------------
+Practical Slice Email :-
+
+   theName = input("what's your name ?").strip().capitalize()             # OsaMa
+   theEmail = input("what's your email ?").strip()                        # Osama@email.com
+   theUsername = theEmail[:theEmail.index("@")]                           # take username from email
+   theDomain = theEmail[theEmail.index("@") + 1:]                         # take domain from email
+   print(f"Hello {theName}, your Email is {theEmail}")                    # Hello Osama, your Email is Osama@email.com
+   print(f"Your Username is {theUsername} \nYour Domain is {theDomain}")  # Your Username is Osama
+                                                                            Your Domain is email.com
+------------------------------------------------------------------------------------------------------------------------
+Practical Your Age Full Details :-
+
+   age = int(input("waht's your age ?").strip()) # make it intiger to deal with it. 20
+   months = age * 12
+   weeks = months * 4
+   days = age * 365
+   hours = days * 24
+   minutes = hours * 60
+   seconds = minutes * 60
+   print("You live for: ")                       # You live for:
+   print(f"{months} Months.")                    # 240 Months.
+   print(f"{weeks:,} Weeks.")                    # 960 Weeks.
+   print(f"{days:,} Days.")                      # 7,300 Days.
+   print(f"{hours:,} Hours.")                    # 175.200 Hours.
+   print(f"{minutes:,} Minutes.")                # 10,512,000 Minutes.
+   print(f"{seconds:,} Seconds.")                # 630,720,00 Seconds.
+------------------------------------------------------------------------------------
+Control Flow "If, Elif, Else" :-                 " Make Decisions."
+
+if conditoin :
+    perform a task.
+    
+elif condition :     
+    perform a task.
+else :
+    perform a task.
+
+   uName = "Osama"
+   uCountry = "Kuwait"
+   cName = "Python Course"
+   cPrice = 100
+   if uCountry == "Egypt" :
+       print(f"Hello {uName} Because you are from {uCountry}")
+       print(f"The Course \"{cName}\" Price is: ${cPrice - 80}")
+   elif uCountry == "KsA" :
+       print(f"Hello {uName} Because you are from {uCountry}")
+       print(f"The Course \"{cName}\" Price is: ${cPrice - 60}")
+   elif uCountry == "Kuwait" :
+       print(f"Hello {uName} Because you are from {uCountry}")
+       print(f"The Course \"{cName}\" Price is: ${cPrice - 50}")     # perform this task.    
+   else :
+       print(f"Hello {uName} Because you are from {uCountry}")
+       print(f"The Course \"{cName}\" Price is: ${cPrice - 30}")
+
+
+
+Nested if :-
+
+   uName = "Osama"
+   isStudent = "yes"
+   uCountry = "Qatar"
+   cName = "Python Course"
+   cPrice = 100
+   if uCountry == "Egypt" or uCountry == "KSA" or uCountry == "Qatar":
+       if isStudent == "yes" :
+           print(f"Hello {uName} Because you are from {uCountry} and you are a Student")
+           print(f"The course \"{cName}\" Price is: ${cPrice - 90}")
+       else :
+           print(f"Hello {uName} Because you are from {uCountry}")    
+           print(f"The Course \"{cName}\" Price is: ${cPrice - 80}")
+   elif uCountry == "Kuwait" or uCountry == "Bahrain" :
+       print(f"Hello {uName} Because you are from {uCountry}")
+       print(f"The Course \"{cName}\" Price is: ${cPrice - 50}")    
+   else :
+       print(f"Hello {uName} Because you are from {uCountry}")
+       print(f"The Course \"{cName}\" Price is: ${cPrice - 30}")
+    
+
+
+Ternary Conditional Operator :-                  " Short if."
+ Condition If True | if condition | else | condition If False
+
+   print("Movie is not Good 4U" if age < movieRate else "Happy Watching")
+
+OR :-
+
+   movieRate = 18
+   age = 18
+   if age < movieRate : print("Movie is not 4U")
+   else : print("Happy Watching")
+------------------------------------------------------------------------------------------------
+Calculate Age Advanced Version :-
+
+   print( "#" * 80)
+   print(" You can write the first letter or full name of the time unit ".center(80, "#"))
+   print( "#" * 80)
+   age = input("Please write your age ? ").strip()
+   unit = input("please choose time unit: Months, Weeks, Days : ").strip().lower()
+   months = int(age) * 12
+   weeks = months * 4
+   days = int(age) * 365
+   if unit == "months" or unit == "m":
+       print("You choose Months")
+       print(f"You lived for {months:,} Months.")
+   elif unit == "weeks" or unit == "w":
+       print("You choose Weeks")
+       print(f"You lived for {weeks:,} Weeks.")
+   elif unit == "days" or unit == "d":
+       print("You choose Days")
+       print(f"You lived for {days:,} Days.")       
+------------------------------------------------------------------------------------------------------
+Membership Operators :-
+
+Strings :-
+   
+   name = "osame"
+   print("s" in name)        # True
+   print("a" in name)        # True
+   print("A" in name)        # False
+  
+
+Lists :-
+
+   friends = ["Ahmed", "Sayed", "Mahmoud"]
+   print("Osam" in friends)
+   print("Sayed" in friends)
+   print("Mahmoud" not in friends)
+  -------------------------------------------------------
+   countriesOne = ["Egypt", "KSA", "Kuwait", "Bahrain"]
+   countriesOneDiscount = 80
+   countriesTwo = ["Italy", "USA"]
+   countriesTwoDiscount = 50
+   myCountry = "Egypt"
+   if myCountry in countriesOne :
+       print(f"You have a discount of ${countriesOneDiscount}")
+   elif myCountry in countriesTwo :
+       print(f"You have a discount of ${countriesTwoDiscount}")
+   else :
+       print("You have no discount")
+    --------------------------------------------------------
+Practical Membership control :-
+
+   admins = ["Ahmed", "Osama", "Sameh", "Rahma", "Mahmoud", "Enas"]
+   name = input("please type your name ").strip().capitalize()
+   if name in admins :
+       print(f"Hello {name} Welcome Back")
+       option = input("Delete or Update your name? ").strip().capitalize()
+       if option == "Update" or option == "U":
+           theNewname = input("type your new name ").strip().capitalize()
+           admins[admins.index(name)] = theNewname
+           print("name updated.")
+       elif option == "Delete" or option == "D" :
+           admins.remove(name)
+           print("name deleted.")
+       else :
+           print("wrong option !")    
+   else :
+       status = input("your aren't an admin, Add you Y, N ?").strip().capitalize()
+       if status == "Yes" or status == "Y" :
+           print("You have been added.")
+           admins.append(name)
+       else :
+           print("You are not added.")    
+   print(admins)    
+---------------------------------------------------------------------------------------------
+While loop :-
+ while condition "true or false":
+     perform a task.
+
+
+   a = 0
+   while a < 10 :
+       print(a)
+       a += 1
+   else :
+       print("Loop is done")      # count to 9 then print 'Loop is done'.
+
+        --------------------------------------------------------
+
+   myF = ["Os", "Ah", "Ga", "Al", "Ra", "Sa", "Ta", "Ma", "Mo", "Wa"]
+   a = 0
+   while a < len(myF) :
+       print(f"#{str(a + 1).zfill(2)} {myF[a]}") # it will print all like #01 Os till #10 Wa
+       a += 1
+   else : 
+       print("All friends printed")              # it will be printed after the loop ends.
+
+      --------------------------------------------------------------------
+
+   myFavouritewebs = []
+   maximumWebs = 5
+   while maximumWebs > 0 :
+       web = input("website name without https:// ")
+       myFavouritewebs.append(f"https://{web.strip().lower()}")
+       maximumWebs -= 1
+       print(f"website added, {maximumWebs} places left.")
+       print(myFavouritewebs)
+   else :
+       print("Bookmarks is full.")
+
+   if len(myFavouritewebs) > 0 :
+       myFavouritewebs.sort()
+       index = 0
+       print("printing the list of websites in your Bookmark.")
+       while index < len(myFavouritewebs) :
+           print(myFavouritewebs[index])
+           index += 1   
+
+   ----------------------------------------------------------------
+
+   tries = 4
+   mainPassword = "Osama#123"
+   inputPassword = input("write your password: ")
+   while inputPassword != mainPassword :
+       tries -= 1
+       print(f"wrong password, {'last chance' if tries == 1 else f'{tries} chances left.'}")
+       inputPassword = input("write your password: ")
+       if tries == 1 :
+           print("you don't have any tries.")
+           break
+   else :
+       print("corrict password.")    
+--------------------------------------------------------------------------------------------------- 
+for loop :-
+ for var in iterable_object :
+   perform a task.
+
+
+   myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+   for number in myNumbers :
+       if number % 2 == 0 :
+           print(f"Number {number} is Even")
+       else :
+           print(f"Number {number} is Odd")    
+   else :
+       print("The loop is finished.")
+
+
+
+   myName = "OsaMa"
+   for letter in myName :
+       print(f"[{letter.upper()}]")           
+
+
+
+   myRange = range(1, 100)
+   for number in myRange :
+       print(number)
+
+
+
+   mySkills = {
+       "Html"   : "90%" ,
+       "Css"    : "80%" ,
+       "PHP"    : "70%" ,
+       "Js"     : "80%" ,
+       "Python" : "30%" ,
+       "Pandas" : "10%"
+   }
+   print(mySkills["Python"])           # to git the value of that key.
+   print(mySkills.get("Python"))       # the same function as the last one.
+   for skill in mySkills :
+       print(f"MY progress in lang {skill} is: {mySkills[skill]}")
+       -----------------------------------------------------------------
+Nested loop :- 
+  
+   people = ["Osama", "Ahmed", "Sayed", "Ali"]
+   skills = ["Html", "Css", "Js"]
+   for name in people :
+       print(f"{name} skills is: ")
+       for skill in skills :
+           print(f"- {skill.upper()}")           # it will be like that  Osama skills is: 
+                                                                         - HTML
+                     							 - CSS
+                                                                         - JS
+
+
+   people = {
+       "Osama" : {
+           "Html" : "70%" ,
+           "Css"  : "80%" ,
+           "Js"   : "70%" 
+       } ,
+       "Ahmed" : {
+           "Html" : "90%" ,
+           "Css"  : "80%" , 
+           "Js"   : "90%"
+       } ,
+       "Sayed" : {
+           "Html" : "70%" ,
+           "Css"  : "60%" ,
+           "Js"   : "90%"
+       }
+   }
+   for name in people :
+       print(f"Skills and progress for {name} is: ")
+       for skill in people[name] :
+           print(f"- {skill.upper()} => {people[name][skill]}") # it will be like  Skills and progress for Osama is:
+                                                                                   - HTML => 70%
+                                                                                   - CSS => 80%
+                                                                                   - JS => 70%
+
+
+
+   myUltimateSkills = {
+       "HTML" : {
+           "Main"  : "80%" ,
+           "Pugjs" : "80"
+       } ,
+       "CSS" : {
+           "Main" : "90%" ,
+           "Sass" : "70%"
+       }
+   }
+   for main_key, main_value in myUltimateSkills.items() :
+       print(f"{main_key} progress is: ")
+       for child_key, child_value in main_value.items() :
+           print(f"- {child_key} => {child_value}")             # HTML progress is: 
+                                                                  - Main => 80%
+                                                                  - Pugjs => 80
+                                                                  CSS progress is:
+                                                                  - Main => 90%
+                                                                  - Sass => 70% 
+
+
+
+   maySkills = {
+       "Html" : "80%" ,
+       "Css"  : "90%" ,
+       "Js"   : "70%" ,
+       "PHP"  : "80%"
+   }
+    # First way.
+   for skill in maySkills :
+       print(f"- {skill.upper()} => {maySkills[skill]}")   # - HTML => 80%
+                                                             - CSS => 90%
+                                                             - JS => 70%
+                                                             - PHP => 80%
+    # Second way and same result.
+   for skill_key, skill_value in maySkills.items() :
+       print(f"- {skill_key.upper()} => {skill_value}")    # - HTML => 80%
+                                                             - CSS => 90%
+                                                             - JS => 70%
+                                                             - PHP => 80%
+------------------------------------------------------------------------------------------------------------------------
+Break, Continue, and Pass :-
+
+Continue :-                  " Stop current iteration then continue after it."
+
+   myNumbers = [1, 2, 3, 4, 5, 7, 10, 13, 14, 15, 19]
+   for number in myNumbers :
+       if number == 13 :
+           continue
+       print(number)         # 1 2 3 4 5 7 10 14 15 19  "didn't print 13 it continue after it."   
+
+
+
+Break :-                     " stops the loop." 
+
+   myNumbers = [1, 2, 3, 4, 5, 7, 10, 13, 14, 15, 19]
+   for number in myNumbers :
+       if number == 13 :
+           break
+       print(number)         # 1 2 3 4 5 7 10
+
+
+
+
+Pass :-                      " passes the function."
+
+   myNumbers = [1, 2, 3, 4, 5, 7, 10, 13, 14, 15, 19]
+   for number in myNumbers :
+       if number == 13 :
+           pass              # it passes the if function without errors.
+       print(number)         # 1 2 3 4 5 7 10 13 14 15 19
+---------------------------------------------------------------------------------------------
+Function and Return :-
+ A Function is a Reusable Block of code do a task.
+ A Function Run when you Call it.
+ A Function Accept element to deal with called [parameters].
+ A Function can do the task without returning data.
+ A Function create to prevent DRY "Dont Repeat Yourself".
+ A Function Accept elements when you call it Called [Arguments].
+ A Function is for all Team and all Apps.
+ There is a Built-In Function and User Defined Functions.
+  
+  def function_name() :
+      block of code for the function.
+
+
+   def function_name() :          # Do the task without returning a data.       
+       print("Hello world.")
+   function_name()                # here we call it so the result is 'Hello world.'
+
+
+
+   def function_name() :       
+       return "Hello world."      # return the data without printing it.
+   print(function_name())
+
+
+
+>Function Parameters and Arguments :-
+ 
+ # def                      => Function keyword {define}.
+ # say_hello()              => Function name. 
+ # name                     => Parameter.
+ # print(f"Hello {name}")   => Task.
+ # say_hello("name")        => name here is the Argument.
+
+   a, b, c = "Osama", "Ahmed", "Sayed"
+   def sey_hello(name) :
+       print(f"Hello {name}")
+   sey_hello(a)                        # Hello Osama
+   sey_hello(b)                        # Hello Ahmed
+   sey_hello(c)                        # Hello Sayed
+     
+
+
+   def Addition(n1, n2) :
+       if type(n1) != int or type(n2) != int :
+           print("Only Integers Allowed.")
+       else :    
+           print(n1 + n2)
+   Addition(2, 4)                      # 6
+
+
+
+   def full_name(first, middle, last) :
+       print(f"Hello {first.strip()} {middle.strip().upper():.1s}. {last.strip()}")
+   full_name("OsaMa", "FaThy", "Mohammed")       # OsaMa F. Mohammed
+
+
+
+>Function Packing, Unpacking Arguments *Args :-
+
+   myList = [1, 2, 3, 4]
+   print(*myList)            # 1 2 3 4 
+
+
+
+   def say_hello(*peoples) :                     # * for undifined num of arguments. "except any num of arguments
+       for name in peoples :
+           print(f"Hello {name}")
+   say_hello("Osama", "Hamada", "Ahemd", "Ali")  # You can type any num of names here. result => Hello Osama and so on.
+                                                 
+
+
+   def show_details(name, *skills) :                         # first for name then the other for skills
+       print(f"Hello {name.strip()} your skills is: ")
+       for skill in skills :
+           print(f"- {skill}")
+   show_details("Osama", "html", "css", "python")            # Hello Osama your skills is: 
+                                                               - html
+                                                               - css
+                                                               - python
+   show_details("Ali", "html", "css", "python", "PHP", "Js") # Hello Ali your skills is:
+                                                               - html
+                                                               - css
+                                                               - python
+                                                               - PHP
+                                                               - Js
+
+
+
+>Function Default Parameters :-
+ Default Value for a Parameter should be at the End of the def Function.
+ OR you should a give Default Value to all Parameters.
+   
+   def sey_hello(name = "Unknown", age = "Unknown", country = "Unknown") :
+       print(f"Hello {name}, your age is {age} and your country is {country}")
+   sey_hello("Osama", 20, "Egypt")     # Hello Osama, your age is 20 and your country is Egypt
+   sey_hello("Ali", 21)                # Hello Ali, your age is 21 and your country is Unknown
+   sey_hello("Ramy")                   # Hello Ramy, your age is Unknown and your country is Unknown
+   sey_hello()                         # Hello Unknown, your age is Unknown and your country is Unknown
+
+    
+
+>Function Packing, Unpacking Arguments **KWArgs :-
+  For Tuple Unpacking use *
+  For Dict Unpakcing use ** 
+
+   
+   def show_skills(*skills) :
+       print(type(skills))
+       for skill in skills :
+           print(f"- {skill}")
+   show_skills("Html", "Js", "Css")    # <class 'tuple'> 
+                                         - Html 
+                                         - Js   
+                                         - Css 
+
+
+
+   mySkills = {
+      'Html' : '80%',
+      'Css'  : '70%',
+      'Js'   : '50',
+      'Go'   : '40%'
+   }
+   def show_skills(**skills) :
+       print(type(skills))
+       for skill , value in skills.items() :
+           print(f"- {skill} => {value}")
+   show_skills(Html = "80%", Js = "70%", Css = "50%", Python = "80%") # <class 'dict'>
+                                                                      - Html => 80%
+                                                                      - Js => 70%
+                                                                      - Css => 50%
+                                                                      - Python => 80%
+   show_skills(**mySkills)             # <class 'dict'>
+                                         - Html => 80%
+                                         - Css => 70%
+                                         - Js => 50
+                                         - Go => 40%  
+
+
+
+>Function Packing and Unpacking Arguments Training :-
+
+                             
+   mySkills = {
+      'Html'   : '80%',
+      'Css'    : '70%',
+      'Python' : '50',
+      'MySQL'  : '40%'
+   }
+   skill_Tuple = ("Htmle", "Css", "Js")
+   def show_skills(name, *skills, **skillsWithProgress) :
+       print(f"Hello {name} \nSkills without progress is: ")
+       for skill in skills :
+           print(f"- {skill}")
+       print("Skills with Progress is: ")
+       for skill_key, skill_value in skillsWithProgress.items() :
+           print(f"- {skill_key} => {skill_value}")    
+   show_skills("Osama", *skill_Tuple, **mySkills)                    # Hello Osama 
+                                                                       Skills without progress is:
+                                                                       - Html
+                                                                       - Css
+                                                                       - Js
+                                                                       Skills with Progress is:
+                                                                       - Html => 80%
+                                                                       - Css => 70%
+                                                                       - Python => 50
+                                                                       - MySQL => 40%
+
+   show_skills("Osama", "Htmle", "Css", "Js", Html = "80%", Css = "70%", Python = "50%", MYSQL = "40%") # same as the above but Unpacked data.
+
+notes for the previous EX :-
+ *skill_Tuple is same as "Html", "Css", "Js"    [* for Unpacking the Tuple]
+ **mySkilss is same as Html = "80%", Css = "70%", Python = "50%", MYSQL = "40%"    [** for Unpacking the Dict] 
+ This Function except all ways "Packed and Unpacked".
+
+
+
+>Function Scope :-
+ Take care of your typing and line index here.
+ 
+   
+   x = 1     # Global scope 
+   def one() :
+       x = 2
+       print(f"print variable from function's one scope {x}")
+   def two() :
+       global x   # we use it to overwrite the global variable 
+       x = 4      # if x not found here x = 1 from global
+       print(f"print variable from function's two scope {x}")
+   print(f"print variable from global scope {x}")     # print variable from global scope 1               
+   one()                                              # print variable from function's one scope 2
+   two()                                              # print variable from function's two scope 4
+   print(f"print variable from global scope after two function is called {x}") # print variable from global scope after two function is called 4
+
+  
+      
+>Function Recursion :-
+  To Understand recursion, You need to first understand Recursion
+
+
+   def cleanWord(word) :
+       if len(word) == 1 :
+           return word
+       if word[0] == word[1] :
+           return cleanWord(word[1:])
+       return word[0] + cleanWord(word[1:]) 
+   print(cleanWord("WWWoooorrrldd"))
+   print(cleanWord("OOOOOOsssaMMMaaa"))           
+
+
+
+
+>Function => lambda "Anonymous Function" :-
+  It has no name.
+  you can call it inline without defining it.
+  you can use it in return data from another function.
+  Lambda used for Simple function and Def handle the Large tasks.
+  Lambda is one single expression not Block of code.
+  Lambda type is Function.
+  variable = lambda parameter : Data
+   
+
+   def sey_hello(name, age) : return f"Hello {name} your age is: {age}"
+   hello = lambda name, age : f"Hello {name} your age is: {age}"
+   print(sey_hello("Ahmed", 20))  # Hello Ahmed your age is: 20
+   print(sey_hello.__name__)      # sey_hello  
+   print(hello("OsaMa", 20))      # Hello OsaMa your age is: 20
+   print(hello.__name__)          # <lambda>
+   print(type(hello))             # <class 'function'>
+---------------------------------------------------------------------------------------------
+File Handling :-
+ Modes :-
+ "a" Append  Open file for appending values, Create file if not exists.
+ "r" Read    [Default value] Open file for read and give error if file is not exists.
+ "w" Write   Opin file for writing, create file if not exists.
+ "x" Create  Create file, give error if file exists.
+ explorer .  type it in the Terminal to open the working directory 
+
+ open("file name", "mode")
+
+ Absolute path : path that starts with computer root
+ Releated path : path that releated to the path you are in now. 
+
+ import os                         # opereting system module.
+ print(os.getcwd())                # path of your current working dir."Main current working dir"
+ print(os.path.abspath(__file__))  # return the absolute path with the file name opened in visual studio."opened file path"
+                                     p:\Written courses\Courses\first.py
+ print(os.path.dirname(file's name with path)
+ print(os.path.dirname(os.path.abspath(__file__)))     # Dir of the opened file.
+                                                         p:\Written courses\Courses
+ print(os.path.dirname("p:\Written courses\Courses\osama.txt"))  # p:\Written courses\Courses
+ os.chdir(os.path.dirname(os.path.abspath(__file__)))  # change dir to the new one." we changed to the opened file dir"
+ open(r"p:\Written courses\Courses\osama.txt")         # open file with abs path and "r" for raw string "all path is string".
+ os.remove("path")                                     # remove a file.
+
+ file.read(num)        # number of letters you want to read, default is -1. "mean read all data"            
+ file.readline(num)    # number of letters you want to read, default is reading all first line.
+ file.readlines(num)   # number of letters you want to read, default is showing all lines as a list.     
+ file.write("text")    # Add file if it's not existing, Remove the preveous writing and writy the new text.
+ file.writelines(list) # write the list into a file.
+ file.truncate(num)    # number of elements you need and remove the rest.
+ file.tell()           # show you the cursor position, new line is a two character.
+ file.seek(num)        # number for the position you want to read from it.
+ file.close()          # to close your file.
+
+
+   myFile = open("p:\Written courses\Courses\osama.txt", "r")
+   print(myFile)               # File data object =>  <_io.TextIOWrapper name='p:\\Written courses\\Courses\\osama.txt' mode='r' encoding='cp1252'>
+   print(myFile.name)          # File name        =>  p:\Written courses\Courses\osama.txt
+   print(myFile.mode)          # File mode        =>  r
+   print(myFile.encoding)      # File encoding    =>  cp1252
+   print(myFile.read())        # read file data   =>  Hello python How are you doing I'm from text
+   print(myFile.readline(5))   # show 5 letters                   =>  Hello
+   print(myFile.readline())    # show the rest of the first line  =>   python
+   print(myFile.readline())    # show the next line               =>  How are you doing
+   print(myFile.readline())    # show first line  =>  Hello python
+   print(myFile.readline())    # show second line =>  How are you doing
+   print(myFile.readline())    # show third line  =>  I'm from text
+   print(myFile.readlines())   # show all lines   =>  ['Hello python\n', 'How are you doing\n', "I'm from text"]
+   print(myFile.readlines(20)) # show 2 lines caze 20 letters  => ['Hello python\n', 'How are you doing\n']
+
+
+   myFile = open("p:\Written courses\Courses\osama.txt", "r")
+   for line in myFile :
+       print(line)                     # it will print data to the line starts with 'How'.
+       if line.startswith("How") :
+           break                        
+   myFile.close()
+
+
+   myFile = open("p:\Written courses\Courses\osama.txt", "w")   # w for new writing."overwriting"
+   myList = ["Osa\n", "LOL\n", "zoz\n"]
+   myFile.writelines(myList)
+   
+
+   myFile = open("p:\Written courses\Courses\osama.txt", "a")   # a for appending. "no overwriting"
+   myList = ["Osa\n", "LOL\n", "zoz\n"]
+   myFile.writelines(myList)
+   myFile.write("4th line\n\n\n")                # \n 3 times make crsor after 3 empty lines.
+   myFile.write("...............")               # cursor will be after the last dot.
+
+   
+   myFile = open("p:\Written courses\Courses\osama.txt", "a")
+   myFile.truncate(2)        # just keep to letters.
+   print(myFile.tell())      # cursor position is 2. "new lin is 2 characters"
+
+
+   myFile = open("p:\Written courses\Courses\osama.txt", "r")
+   myFile.seek(6)            # read from position 6. "after 6 letters start reading"
+   print(myFile.read())      # from python file.  *"Hello " havn't be read*
+ 
+
+   import os
+   os.remove("p:\Written courses\Courses\osama.txt")  # file removed
+---------------------------------------------------------------------------------------------------------------
+Built in Functions :-
+
+
+> all() :-                        "All elements are true of not."       
+
+   x = [1, 2, 3, 4, []]
+   if all(x) :
+       print("All is true.")                               # will be printed if there isn't a []
+   else :
+       print("There is at least one element is false.")    # will be printed caz of []
+
+
+
+> any() :-                        "If any element is True in the list return True."
+
+   x = [1, 2, 3, 4, []]
+   if any(x) :                                        
+       print("There is at least one element is true.")     # will be printed caz there are True elements.  
+   else :
+       print("There is no any true element.")              # printed if x = [0, []]
+
+
+
+> bin() :-                        " Print Binary code." 
+
+   print(bin(5))             # 0b101
+ 
+
+
+> id() :-                         "Print the id locator in the memory of a variable."
+ 
+   a = 1
+   b = 2
+   print(id(a))              # 2763615633648     "changable every time"
+   print(id(b))              # 2763615633680     "changable every time"
+
+
+
+> sum() :-                        "sum of elements."
+  sum(iterable, start)            start is a number you add to the iterable sum [default is 0]
+
+ a = [1, 10, 19, 40]
+ print(sum(a))               # 70
+ print(sum(a, 40))           # 110
+
+
+                
+> round() :-                      "Round the number to nearest integer."
+  round(number, num of digits)       
+
+
+   print(round(150.499))     # 150
+   print(round(150.501))     # 151
+   print(round(150.489, 2))  # 150.49
+   print(round(150.484, 2))  # 150.48
+
+
+
+> range() :-                      if you type range(num)  this num will be the end and didm't enclude it.   
+  range(start, end, step)         end is important, start default is 0, step default is 1. 
+
+
+   print(list(range(0)))          # []
+   print(list(range(10)))         # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+   print(list(range(0, 21, 2)))   # [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+
+
+> print() :-
+  comma in print mean type more than massage in one line and default separator is space.
+  separator default in print is " " space.   print("text", sep = "separator you want")
+  end default in print is \n or press enter. print("text", end = "end you want")
+ 
+
+   print("Hello How are you")                      # Hello How are you
+   print("Hello","How","are","you")                # Hello How are you 
+   print("Hello", "How", "are", "you", sep ="_")   # Hello_How_are_you
+   print("Hello", "How", "are", "you", sep =" | ") # Hello ~ How ~ are ~ you
+
+   print("first line")
+   print("second line", end = " ")
+   print("third line")                 # first line
+                                         second ine third line
+
+
+
+> abs() :-                    Absolute value of a number."distance between zero and your number"
+
+   print(abs(-100))          # 100
+
+
+
+> pow() :-                   power or exponent.
+  pow(base, exponential, modulus)
+
+
+   print(pow(2,5))           # 32      "mean (2 * 2 * 2 * 2 * 2)"
+   print(pow(2,5,10))        # 2       "mean (2 * 2 * 2 * 2 * 2) % 2" The rest of 32 / 10
+
+
+
+> min() :-                   Give minimum number
+  min(item, item, item, or iterator)
+
+
+   myNumbers = (1, 20, -50, -100, 100)      
+   print(min(myNumbers))                    # -100
+   print(min(1, 10, -50, 20, 30))           # -50
+   print(min("X", "Z", "Os"))               # Os
+
+
+
+> max() :-                   Give miximum number
+  max(item, item, item, or iterator)
+
+
+   myNumbers = (1, 20, -50, -100, 100)
+   print(max(myNumbers))                    # 100
+   print(max(1, 10, -50, 20, 30))           # 30
+   print(max("X", "Z", "Osama"))            # Z
+
+
+
+
+> slice() :-                      Didn't include the end.
+  slice(start, stop, step)        # stop is important. "slice(num) num > stop"
+
+
+   a = ["A", "B", "C", "D", "E", "F"]
+   print(a[:5])              # ['A', 'B', 'C', 'D', 'E']
+   print(a[slice(5)])        # ['A', 'B', 'C', 'D', 'E']
+   print(a[slice(2,5)])      # ['C', 'D', 'E']
+
+
+
+> Map :-
+  Map take a function + iterator.
+  Map called map because it map the function on every element.
+  The function can be pre-defined function or lambda function.
+
+
+   myTexts = ["Osama", "Ahmed", "Sayed"]    
+   def formatText(text) :
+       return f"- {text.strip().capitalize()} -"
+   myFormatedText = map(formatText, myTexts)
+   print(myFormatedText)                         # <map object at 0x00000210A88AADD0>
+   for name in myFormatedText :
+       print(name)                     # - Osama -
+                                         - Ahmed -
+                                         - Sayed -
+
+   myTexts = ["Osama", "Ahmed", "Sayed"]    
+   def formatText(text) :
+       return f"- {text.strip().capitalize()} -"
+   for name in map(formatText, myTexts) :
+       print(name)                               # - Osama -
+                                                   - Ahmed -
+                                                   - Sayed -
+
+   myTexts = ["Osama", "Ahemd", "Sayed"]    
+   for name in map((lambda text : f"- {text.strip().capitalize()} -"), myTexts) :
+       print(name)                     # - Osama -
+                                         - Ahmed -
+                                         - Sayed -
+          
+
+
+> Filter :-
+  Filter take a function + iterator 
+  Filter run a function on every element
+  Filter out all elements for which the function return true
+  The function can be pre-defined function or lambda function
+  The function need to return boolean value
+
+
+   myNumbers = [1, 19, 10, 20, 100, 5]
+   def checkNumber(num) :
+       return num > 10
+   myResult = filter(checkNumber, myNumbers)
+   for number in myResult :
+       print(number)                   # 19
+                                         20 
+                                         100
+   
+
+   myText = ["Osama", "Omeer", "Ahmed", "Sayed", "Othman" ]
+   def checkName(name) :
+       return name.startswith("O")
+   myResult = filter(checkName, myText)
+   for person in myResult :
+       print(person)                   # Osama
+                                         Omeer
+                                         Othman
+    
+
+
+   myText = ["Osama", "Omeer", "Ahmed", "Sayed", "Othman" ]
+   myResult = filter((lambda name : name.startswith("O")), myText)
+   for person in myResult :
+       print(person)                   # Osama
+                                         Omeer
+                                         Othman    
+
+
+
+> Reduce :-
+  Reduce take a function + iterator
+  Reduce run a function on first and second element and give result
+  Then run function on result and third element 
+  Then run function on result and fourth element and so on 
+  Till one eleement is left and this is the result of the reduce
+  The function can be pre-defined or lambda function
+
+  
+   from functools import reduce
+   numbers = [1, 8, 2, 9, 100]
+   def sumAll(num1, num2) :
+       return num1 + num2 
+   result = reduce(sumAll, numbers)    
+   print(result)                  # 120  > ((((1 + 8) + 2) + 9) + 100)
+
+
+   from functools import reduce
+   numbers = [1, 8, 2, 9, 100]
+   result = reduce((lambda num1, num2 : num1 + num2), numbers)    
+   print(result)                  # 120  > ((((1 + 8) + 2) + 9) + 100)
+
+
+
+> enumerate() :-             "Add counter to the iterable."
+  enumerate(iterable, start[default=0])
+
+  
+   mySkills = ["Html", "Css", "Js", "PHP"]
+   mySkillsWithCounter = enumerate(mySkills, 1)
+   print(type(mySkillsWithCounter))                   # <class 'enumerate'>
+   for counter, skill in mySkillsWithCounter :
+       print(f"{counter} - {skill}")                  # 1 - Html
+                                                        2 - Css
+                                                        3 - Js
+                                                        4 - PHP
+
+
+
+> help() :-
+  help(function you don't know)
+
+
+
+> reversed() :-
+  reversed(itarable)
+
+   
+   myString = "Osa"
+   for letter in reversed(myString) :
+       print(letter)                   # a s O
+
+
+   mySkills = ["Html", "Css", "Js", "PHP"]
+   for skill in reversed(mySkills) :
+       print(skill)                    # PHP
+                                         Js
+                                         Css
+                                         Html
+---------------------------------------------------------------------------------------------------
+Built in Modules :-
+ Module is a file contain a set of functions.
+ You can import module in your app to help you. 
+ You can import multiple modules. 
+ You can create your own module.
+ Modules saves your time.
+ import module name                              # to import whole one module.
+ import module name, module name                 # and so on to import more than one module.
+ import module name as other name                # to make alias name for the module. اسم مستعار
+ from module name import function name           # to import specific function from the module.
+ from module name import function, function      # and so on to import more than one function.
+ from module name import function name as name   # use alias name to the function.
+ from module name import *                       # import all function.
+ 
+
+   import random
+   print(f"printing random integer {random.randint(1, 8)}")     # print random integer 4
+    
+     
+   from random import randint
+   print(f"print random integer {randint(1, 5)}")     # print random integer 3 
+
+
+   from random import randint, random
+   print(f"print random floar {random()}")            # print random float 0.4120085349571839
+   print(f"print random integer {randint(1, 5)}")     # print random integer 2
+
+
+
+> create your Module :-
+  First create a file with name of the module.
+  Inside that file put your functions and blocks of codes.
+  Then you can import your module
+  print(dir(module name)          # to show functoins in the module.
+  sys.path.append(r"path")        # to add a path to import modules from it.
+
+   
+   # code in the Module file.
+   def sayHello(name) :
+       print(f"Hello {name}")
+   def sayHowAreYou(name) :
+       print(f"How are you {name}?") 
+   # code of the python file.
+   import first as ee             # import module with alias.
+   ee.sayHello("Ahmed")           # Hello Ahmed  
+   ee.sayHowAreYou("Ahmed")       # How are you Ahmed?
+   OR
+   from first import sayHello as s     # import function with alias. 
+   s("Ahmed")                          # Hello Ahmed
+
+
+
+> install external packages :-
+  Module Vs Package 
+  Module is a single file with functions.
+  Packaga is a file have a lot of Modules.
+  External packages downloaded from the internet.
+  You can install packages with python package manager PIP.
+  PIP install the package and it's dependencies.
+  Modules list "https://docs.python.org/3/py-modindex.html"
+  External Packages and Modules Directory "https://pypi.org/"
+  PIP manual "https://pip.pypa.io/en/stable/reference/pip_install/"
+
+
+  pip --version                        # git the version of pip.
+  pip install --user  pip --upgrade    # to upgrade pip.
+  pip install package==version         # install specific version.
+  pip install package>=version         # install specific version or updated version.
+  pip install package package          # to install more than one package.
+  pip install package --upgrade        # upgrade a package.
+  pip install termcolor                # name coloring
+  pip install pyfiglet                 # ASCII Art 
+  
+
+   import termcolor
+   import pyfiglet
+   print(pyfiglet.figlet_format("OZO_O"))             #  ___ ________     ___ 
+                                                        / _ \__  / _ \   / _ \
+                                                       | | | |/ / | | | | | | |
+                                                       | |_| / /| |_| | | |_| |
+                                                        \___/____\___/___\___/
+                                                                    |_____| 
+   print(termcolor.colored("OsaMa", color="yellow"))  # OsaMa  "yellow colored." 
+
+
+   
+   import termcolor
+   import pyfiglet
+   print(termcolor.colored(pyfiglet.figlet_format("OZO_O"), color="red")
+                                       #   ___ ________     ___  
+                                          / _ \__  / _ \   / _ \
+                                         | | | |/ / | | | | | | |  "red Colored."
+                                         | |_| / /| |_| | | |_| |
+                                          \___/____\___/___\___/
+                                                      |_____|  
+---------------------------------------------------------------------------------------------------
+Date and Time :-
+
+# print the current date and time :-
+   import datetime
+   print(datetime.datetime.now())      # 2022-07-31 22:32:46.562633
+ 
+
+# print the current date :-
+   import datetime 
+   print(datetime.datetime.now().date())    # 2022-07-31
+
+>> print the current year :-
+   import datetime 
+   print(datetime.datetime.now().year)      # 2022
+
+>> print the current month :-
+   import datetime 
+   print(datetime.datetime.now().month)     # 7
+
+>> print the current day :-
+   import datetime 
+   print(datetime.datetime.now().day)       # 31 
+
+
+# print the current time :-
+   import datetime 
+   print(datetime.datetime.now().time())    # 22:41:14.795934
+
+>> print the current hour :-
+   import datetime 
+   print(datetime.datetime.now().hour)      # 22
+
+>> print the current minute :-
+   import datetime 
+   print(datetime.datetime.now().minute)    # 48
+
+>> print the current second :-
+   import datetime 
+   print(datetime.datetime.now().second)    # 4
+
+
+# print the start and the end of date and time :-
+   import datetime 
+   print(datetime.datetime.min)   # 0001-01-01 00:00:00
+   print(datetime.datetime.max)   # 9999-12-31 23:59:59.999999
+
+>> print the start and the end of date :-
+   import datetime 
+   print(datetime.date.min)       # 0001-01-01
+   print(datetime.date.max)       # 9999-12-31
+
+>> print the start and the end of time :- 
+   import datetime 
+   print(datetime.time.min)       # 00:00:00 
+   print(datetime.time.max)       # 23:59:59.999999
+
+
+# print specific date :-
+  print(datetime.datetime(year, month, day, hours, minutes, seconds, micro seconds))
+
+   import datetime 
+   print(datetime.datetime(2002, 1, 26))                   # 2002-01-26 00:00:00
+   print(datetime.datetime(2002, 1, 26, 7, 44, 30, 77))    # 2002-01-26 07:44:30.000077
+  
+
+EX :-
+
+   import datetime 
+   myBirthDay = datetime.datetime(2002, 1, 26)
+   dateNow = datetime.datetime.now()
+   print(f"MY Birthday si {myBirthDay}, and", end=" ")
+   print(f"The Date now is {dateNow}")                          
+   print(f"I lived for {(dateNow - myBirthDay).days} Days.") 
+    # MY Birthday si 2002-01-26 00:00:00, and The Date now is 2022-07-31 23:10:52.436052
+      I lived for 7491 Days.
+
+
+
+
+> Format date :-
+  Remember Python's strftime directives. "Like => %A Day full name"
+
+
+   import datetime
+   myBirthDay = datetime.datetime(2002, 1, 26)
+   print(myBirthDay.strftime("%d-%B-%Y"))   # %d-%B-%Y Day-Month-Year >> 26-January-2002 
+   print(myBirthDay.strftime("%a"))         # %a for Abbrevaited Day name >> Sat
+   print(myBirthDay.strftime("%A"))         # %A for Full Day name >> Saturday 
+   print(myBirthDay.strftime("%d"))         # %d for Day number >> 26
+   print(myBirthDay.strftime("%D"))         # %D for Full date >> 01/26/02
+   print(myBirthDay.strftime("%b"))         # %b for Abbrevaited Month name >> Jan
+   print(myBirthDay.strftime("%B"))         # %B for Full Month name >> January
+   print(myBirthDay.strftime("%y"))         # %y for Abbrevaited Year name >> 02
+   print(myBirthDay.strftime("%Y"))         # %Y for Full Year name >> 2002
+---------------------------------------------------------------------------------------------------
+Iterable Vs Iterator :-
+ 
+> Iterable :-
+  Object contains data that can be iterated upon.
+  Examples (strings, list, set, tuple, dictionary).
+  Integers, Floating point, and Boolean exepresions are not Itarables.
+
+> Iterator :-
+  Object used to iterate over iterable using next() method return 1 element at a time.
+  You can generate iterator from iterable when using iter() method.
+  For loop alreardy calls iter() method on the iterable befind the scene.
+  Gives "Stopiteration" if there's no next element.
+
+
+   myString = "OsaMa"
+   for letter in myString :
+       print(letter, end=" ")     # O s a M a
+   print()    
+   myIterator = iter(myString)
+   print(next(myIterator))        # O    
+   print(next(myIterator))        # s
+   print(next(myIterator))        # a 
+   print(next(myIterator))        # M 
+   print(next(myIterator))        # a
+   # print(next(myIterator))      # error then stop Iteration.
+---------------------------------------------------------------------------------------------------
+Generators :-
+ Generator is a function with "yield" keyword instead of "return".
+ It supports iteration and return generator iterator by calling "yield".
+ Generator functoin can have one or more "yield".
+ By using next() it resume from where it called "yield" not from begining.
+ When called, it's not starting automatically, it's only give you the control.
+ 
+
+   
+   def myGenerator() :
+       return 1
+   print(type(myGenerator()))     # <class 'int'>
+
+
+   def myGenerator() :
+       yield 1
+   print(type(myGenerator()))     # <class 'generator'>
+
+
+   def myGenerator() :
+       yield 1
+       yield 2 
+       yield 3
+       yield 4
+   myGen = myGenerator()
+   print(next(myGen))        # 1
+   print("." * 5)            # .....
+   print(next(myGen))        # 2
+   print("." * 5)            # .....
+   print(next(myGen))        # 3 
+   print("."* 5)             # .....
+   print(next(myGen))        # 4
+ 
+
+   def myGenerator() :
+       yield 1
+       yield 2 
+       yield 3
+       yield 4
+   myGen = myGenerator()
+   print(next(myGen))        # 1
+   print("." * 5)            # .....
+   print(next(myGen))        # 2
+   for number in myGen :
+       print("." * 5)        # .....
+       print(number)         # 3
+                             # .....
+                             # 4
+   for number in myGenerator() :
+       print(number, end=" ")          # 1 2 3 4
+---------------------------------------------------------------------------------------------------
+Decorators :-
+ Sometimes called Meta programming.
+ Everything in python is object even functions.
+ Decorator take a function and add some functionality and return it.
+ Decorator wrap other functoin and enhance their behaviuor.
+ Decorator is higher order function (function accept function as parameter).
+
+
+   def myDecorator(func) :    # Decorator
+       def nestedFunc() :     # any name it's just for decoration
+           print("Before")    # massage from decorator
+           func()             # excute functoin
+           print("After")     # massage from decorator
+       return nestedFunc      # return all data
+   def sayHello() :
+       print("Hello from say hello function")
+   afterDecoration = myDecorator(sayHello)       # old way of calling a function. 
+   afterDecoration()                             # Before
+                                                   Hello from say hello function
+                                                   After
+
+
+   def myDecorator(func) :    # Decorator
+       def nestedFunc() :     # any name it's just for decoration
+           print("Before")    # massage from decorator
+           func()             # excute functoin
+           print("After")     # massage from decorator
+       return nestedFunc      # return all data
+   @myDecorator               # new way of calling a function.
+   def sayHello() :
+       print("Hello from say hello function")
+   sayHello()                                    # Before
+                                                   Hello from say hello function
+                                                   After
+
+
+   def myDecorator(func) :    # Decorator
+       def nestedFunc() :     # any name it's just for decoration
+           print("Before")    # massage from decorator
+           func()             # excute functoin
+           print("After")     # massage from decorator
+       return nestedFunc      # return all data
+   @myDecorator               # here only works for the first function.
+   def sayHello() :
+       print("Hello from say hello function")
+   def sayHowAreYou() :
+       print("How are you from function")
+   sayHello()      # Befor Hello from say hello function
+   sayHowAreYou()  # How are you from function
+
+
+   def myDecorator(func) :    # Decorator
+       def nestedFunc() :     # any name it's just for decoration
+           print("Before")    # massage from decorator
+           func()             # excute functoin
+           print("After")     # massage from decorator
+       return nestedFunc      # return all data
+   @myDecorator               # here only works for the first function.
+   def sayHello() :
+       print("Hello from say hello function")
+   @myDecorator               # this is for second function. 
+   def sayHowAreYou() :
+       print("How are you from function")
+   sayHello()      # Befor Hello from say hello function After
+   sayHowAreYou()  # Befor How are you from function After
+
+
+
+> Decorator function with parameter :-
+
+
+   def myDecorator(func) :    
+       def nestedFunc(num1, num2) :     
+           if num1 < 0 or num2 < 0 :
+               print("Beware one of the numbers is less than zero")
+           func(num1, num2)             
+       return nestedFunc      
+   @myDecorator    
+   def calculator(n1, n2) :
+       print(n1 + n2)
+   calculator(-10, 20)       # Beware one of the numbers is less than zero
+                               30
+
+
+   def myDecorator(func) :    
+       def nestedFunc(num1, num2) :     
+           if num1 < 0 or num2 < 0 :
+               print("Beware one of the numbers is less than zero")
+           func(num1, num2)            
+       return nestedFunc      
+   def myDecoratorTwo(func) :    
+       def nestedFunc(num1, num2) :     
+           print("Coming from decorator 2")
+           func(num1, num2)            
+       return nestedFunc      
+   @myDecoratorTwo
+   @myDecorator    
+   def calculator(n1, n2) :
+       print(n1 + n2)
+   calculator(-10, 20)       # Coming from decorator 2
+                               Beware one of the numbers is less than zero
+                               10
+
+
+   def myDecorator(func) :    
+       def nestedFunc(*numbers) :   
+           for number in numbers :
+               if number < 0 :
+                   print("Beware one of the numbers is less than zero")
+           func(*numbers)            
+       return nestedFunc      
+   @myDecorator    
+   def calculator(n1, n2, n3, n4) :
+       print(n1 + n2 + n3 + n4)
+   calculator(-10, 20, 30, 10)    # Beware one of the numbers is less than zero
+                                    50
+
+
+   from time import time
+   def speedTest(func) :
+       def wrapper() :
+           start = time()
+           func()
+           end = time()
+           print(f"Function running time is: {end - start}")
+       return wrapper
+   @speedTest
+   def bigLoop() :
+       for number in range(1, 20000) :
+           print(number)        
+   bigLoop()                 # it starts counting till it reaches 20000 and give that
+                               Function running time is: 1.8178791999816895
+---------------------------------------------------------------------------------------------------
+Practical loop on many Iterators with Zip() :-
+ zip() return a zip object contains all objects.
+ zip() length is the length of lowest object.
+
+
+   list1 = [1, 2, 3, 4, 5]
+   list2 = ["A", "B", "C"]
+   ultimateList = zip(list1, list2)
+   print(ultimateList)            # <zip object at 0x000002348B9ED200>
+   for item in ultimateList :
+       print(item)                # (1, 'A')
+                                    (2, 'B')
+                                    (3, 'C')
+
+
+   list1 = [1, 2, 3, 4, 5]
+   list2 = ["A", "B", "C", "D"]
+   tuple1 = ("Man", "Woman", "Girl", "Boy")
+   dict1 = {"Name" : "OsaMa", "Age" : 20, "Country" : "Egypt", "Skill" : "Python"}
+   for item1, item2, item3, item4 in zip(list1, list2, tuple1, dict1) :
+       print("List 1 item =>", item1)
+       print("List 2 item =>", item2)
+       print("Tuple 1 item =>", item3)
+       print("Dict 1 key =>", item4, "Value =>", dict1[item4])
+ Result is :-
+    List 1 item => 1
+    List 2 item => A
+    Tuple 1 item => Man
+    Dict 1 key => Name Value => OsaMa
+    List 1 item => 2
+    List 2 item => B
+    Tuple 1 item => Woman
+    Dict 1 key => Age Value => 20
+    List 1 item => 3
+    List 2 item => C
+    Tuple 1 item => Girl
+    Dict 1 key => Country Value => Egypt
+    List 1 item => 4
+    List 2 item => D
+    Tuple 1 item => Boy
+    Dict 1 key => Skill Value => Python
+--------------------------------------------------------------------------------------------------
+Practical Image Manipulation with Pillow :-   " Pillow (PILFork) "
+
+
+   import imp
+   from PIL import Image 
+   myImage = Image.open(r"M:\wallpaper\road.jpg")   # open the image
+   myImage.show()                                   # show the original image
+   myBox = (0, 0, 400, 400)                         # Box(left, upper, right, lower) >> cutting coordinates
+   myNewImage = myImage.crop(myBox)                 # new image from old one
+   myNewImage.show()                                # new image show
+   myConverted = myImage.convert("L")               # converting it to Black and White
+   myConverted.show()                               # show the converted image
+--------------------------------------------------------------------------------------------------------
+Doc string and Comminting VS Documenting :- "Informations that shown in the help or doc."
+ Documentation string for class, module or function.
+ Can be accessed from the help and doc attributes.
+ Made for understanding the functionality of the complex code.
+ There is one line and multiple lines doc strings.
+ Doc string written in '''your massage'''  or  """your massage""" .
+ 
+
+   def say_Hello(name) :
+       '''This is function to say Hello'''  # This is the documentation we write to define the function.
+       print(f"Hello {name}")
+   print(say_Hello.__doc__)                 # This is function to say Hello 
+   help(say_Hello)                          # Help on function say_Hello in module __main__:
+                                              say_Hello(name)
+                                                  This is function to say Hello
+ 
+ 
+   def say_Hello(name) :
+       """
+       MY function
+         It says Hello 
+       Parameter :
+         name => person name for the function
+       Return :
+         Hello massage
+       """
+       print(f"Hello {name}")
+   print(say_Hello.__doc__)       # MY function
+                                      It says Hello
+                                    Parameter :
+                                      name => person name for the function
+                                    Return :
+                                      Hello massage
+   help(say_Hello)                # Help on function say_Hello in module __main__:
+                                    say_Hello(name)
+                                    MY function
+                                      It says Hello
+                                    Parameter :
+                                      name => person name for the function
+                                    Return :
+                                      Hello massage
+---------------------------------------------------------------------------------------------------
+Installing and use Pylint for better code :-     "Stylling of codes"
+
+
+   def sayHello(name) :
+       msg = "Hello" 
+       return f"{msg} {name}"
+   sayHello("Ahmed") 
+  
+ You type in the terminal >>  pylint.exe p:/first.py         "pylint.exe path of code file"
+   p:\first.py:2:17: C0303: Trailing whitespace (trailing-whitespace)
+   P:\first.py:4:0: C0304: Final newline missing (missing-final-newline)      
+   P:\first.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+   p:\first.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+   P:\first.py:1:0: C0103: Function name "sayHello" doesn't conform to snake_case naming style (invalid-name)
+   -----------------------------------
+   Your code has been rated at 0.00/10
+
+ These are the styling problems :-
+   for (trailing-whitespace)      >> Press (f1) then type (trim trailing whitespace)
+   
+ The new code will be like this :-
+
+   """
+   This is my module
+   This function created
+   To say Hello
+   """
+   def say_hello(name):
+       '''This function only says hello'''
+       msg = "Hello"
+       return f"{msg} {name}"
+   say_hello("Ahmed")
+---------------------------------------------------------------------------------------------------
+Errors and exceptions raising :-
+ Exceptations is a runtime error reporting mechanism.
+ Exception gives you  the massage to understand the problem.
+ Traceback gives you the line to look for the code in this line.
+ Exception have types (SyntaxError, IndexError, KeyError, Etc....)
+ Exceptions list "https://docs.python..org/3/library/exceptions.html"
+ "raise Exception("your error massage")" keyword used to raise your own exceptations.
+
+
+   x = -10
+   if x < 0 :
+       raise Exception(f"The number {x} is less than zero")
+       print("this massage will not be printed cuz of error")
+   else :
+       print(f"{x} is ok")        # Traceback (most recent call last):
+                                    File "p:\Written courses\Courses\working courses\first.py", line 3, in <module>
+                                	    raise Exception(f"The number {x} is less than zero")
+                                    Exception: The number -10 is less than zero
+
+
+
+   y = "OsaMa"
+   if type(y) != int :
+       raise ValueError("Only Numbers allowed")  # Traceback (most recent call last): 
+                                                   File "p:\Written courses\Courses\working courses\first.py", line 3, in <module>
+                                                   	raise ValueError("Only Numbers allowed")
+                                                   ValueError: Only Numbers allowed
+           -----------------------------------------------------
+Exeptions Handling :-        "Try, Except, Else, Finally"
+ you can except each error with a massage.
+
+
+ Try     => Test the code for errors.
+ Except  => Handle the errors.
+
+ Else    => If no errors.
+ Finally => Run the code.
+
+
+   
+   try :                                    # Try the code and test errors
+      number = int(input("Write your age: "))
+   except :                                 # Handle the errors if it's found
+      print("This is not Integer.")
+   else :                                   # If there is no errors
+      print("This is Integer.")
+   finally :                                # Run the code whatever happens
+      print("print from finally whatever happens")
+ 
+
+
+   try :
+      # print(10 / 0)
+      # print(x)
+      # print(int("Hello"))
+   except ZeroDivisionError:
+      print("Cant't devide")           # Activated when "print(10 / 0)" is activated.
+   except NameError :             
+      print("Identifier not found")    # Activated when "print(x)" is activated.
+   except ValueError:
+      print("Value error")             # Activated when "print(int("Hello"))" is activated.  
+   except :                       
+      print("Error happens")           # Activated when there is undefined Error.
+
+
+
+
+> Exceptions Handling advanced example :-
+
+
+the_file = None
+the_tries = 5
+while the_tries > 0 :
+    try :                                                                      # try the code 
+        print("Enter the file name with absolute path to open.")
+        print(f"You have {the_tries} tries left.")
+        print("Example : p:/Written courses/Courses/working courses/first.py") # example of file with path
+        file_name_and_path = input("File name with path: ").strip()            # path of the file
+        the_file = open(file_name_and_path, 'r')                               # open the file in read mode
+        print(the_file.read())                                                 # print the file content
+        break                                                                  # break the loop if the try is true
+    except FileNotFoundError:                                                  # if the path is wrong this will happen 
+        print("File not find. Please be sure that the name is valid.")         
+        the_tries -= 1                                                         # tries decreased by one
+    except :                                                                   # any other error
+        print("Error happen.")
+    finally :                                                                  # if the file opened this will happen
+        if the_file is not None :
+            the_file.close()
+            print("file is closed.")
+else :                                                                         # if your tries is ended this will happen
+    print("All tries is done.") 
+----------------------------------------------------------------------------------------------------------------------------
+Debugging code :-
+ 
+ first go to "pereferences >> sittings >> search for debug and check "Debug: allow breakpoints everywhere"
+ then " ctrl + shift + D " to open the debugger.
+ use breakpionts to know every thing about the code.
+--------------------------------------------------------------------------------------------------------------
+Type Hinting :-
+
+ use -> type     to hinting
+
+
+def say_hello(name) -> str :           # Hint to type string in the function
+    print(f"Hello {name}")
+say_hello("Ahmed")
+
+
+def calc(n1, n2) -> int :              # Hint to type integer in the function     
+    print(n1 + n2)
+calc(10, 40)
+----------------------------------------------------------------------------------------------
+Regular Exprrssions intro :-
+ > Sequence of characters  that define a search pattern.
+ > Regular Expression is not in python it's general concept.
+ > Used in [Credit card validation, IP address validation, Email validation]
+ > Test regex site "https://python.org/"
+ > Test regular expression site "regular expressions 101"
+ > Characters sheet "https://www.debuggex.com/cheetsheet/regas/python"
+
+ > characters sheet EX :-
+
+   \d     =>   select one digit number "Just numbers"
+   \d\d   =>   select two digit numbers
+   \d\d\d =>   select three digit numbers and so on
+   \D     =>   select one digit not a number "any thing except numbers"
+   \s     =>   select spaces
+   \S     =>   select any thing except spaces
+   \w     =>   select only numbers, characters and _
+   \w\w   =>   select letter then letter
+   \w\w\w =>   select letter then letter then letter and so on 
+   \W     =>   select special characters and spaces
+   \d\s   =>   select number followed by space
+   \d\s\d =>   select number then space then number
+   .      =>   select any character except new line
+   \.     =>   select characters like . or _
+
+   A\w    =>   select A followed by a letter
+   A\w\w  =>   select A followed by a 2 letters
+   \w\wE  =>   select 2 letters followed by E
+   \sD    =>   select space followed by D
+   
+
+
+
+> Regular Expressions Quantifiers :-
+  
+   *            =>   0 or more
+   +            =>   1 or more
+   ?            =>   0 or 1 "if exist select if not don't do anything"
+   {num}        =>   Excatly that num
+   {num1,num2}  =>   Between num1 and num2
+   {num,}       =>   num or more
+   {,num}       =>   up to that num
+ 
+
+   \w*      =>  select zero letter or more 
+   \w+      =>  select one letter or more
+   \w?      =>  select zero or one letter
+   \w{3}    =>  select 3 letters " /w{num} "  
+   \w{2,4}  =>  select between 2 and 4 = 2 or 3 or 4 letters  " \w{num1,num2} "
+   \w{2,}   =>  select from 2 to infinity. "2 or 3 or 4 or ...."  " \w{num,} "
+   \w{,4}   =>  select 0 or 1 or 2 or 3 or 4
+
+EX :- 
+
+ if we have a phone number and we want to select it :
+   011 5639-853
+   012 1234-757
+  >>>>>>>>>>>>>>> the regural expression is :
+                   >>> \d{3}\s\d{4}-\d{3}  
+
+
+
+> Regular Expressions Characters Classes Training :-
+
+   ame       =>   looking for only 'ame'
+   [ame]     =>   looking for 'ame' or a or m or e lonely
+   [a-z]     =>   looking for lower case alphabetical characters   
+   [A-Z]     =>   looking for upper case alphabetical characters
+   [A-z]     =>   looking for all alphabetical characters
+   [^N]      =>   looking for all upper case characters except 'N'
+   [^a-z0-9] =>   looking for anything except 'from a to z or from 0 to 9'
+
+
+
+> Regular Expressions Assertions & Email Pattern :-
+
+   =>012 1234 567
+   =>012 1234-567
+   
+   012 1234 567=>
+   012 1234-567=>
+
+   012 1234 567
+   012 1234-567
+   012 1234- 567
+   >>>>>>>>>>>> the regural expression to select all numbers data is :
+                 >>>  \d{3}\s\d{4}-?\s?d{3}      # it selects all the above cases 
+                                                   \d{3}   mean 3 numbers
+                                                   \s      mean space
+                                                   \d{4}   mean 4 numbers
+                                                   -?      mean if there is a - select it
+                                                   \s?     mean  if there is a space select it
+                                                   d{3}    mean 3 numbers
+                                                     
+                 >>>  ^\d{3}\s\d{4}-?\s?d{3}     # it selects the last 5 cases 
+                                                   ^ sumbol     mean the matched code should be the first thing in line
+
+                 >>>  \d{3}\s\d{4}-?\s?d{3}&     # it selects the last 5 cases 
+                                                   & symbol     mean the matched code should be the last thing in line
+
+                 >>>  ^\d{3}\s\d{4}-?\s?d{3}&    # it selects the last 3 cases 
+                                                   mean the matched code should be the first thing in line and last thing in the line
+
+
+
+   Osama@
+   @Osama@
+   osama.smsm@osama.com
+   ahmed_ali123@gmail.com
+   mahmoud123@hotmail.net
+   kamel@mail.ru
+   >>>>>>>>>>>>>>>>> the regural expression to select just email :-
+                 >>>   [A-z0-9\.]+@[A-z0-9]+\.[A-z]+   
+                 >>>   ^[A-z0-9\.]+@[A-z0-9]+\.[A-z]+$
+
+                 >>>   [A-z0-9\.]+@[A-z0-9]+\.(com)        # to select just emails end with ".com"
+
+                 >>>   [A-z0-9\.]+@[A-z0-9]+\.(com|net|ru) # to select emails end with ".com or .net or .ru"
+
+
+
+> Regular Expressions Logical Or and Escaping :-
+
+   |     Or
+   \     Escape Specia; characters
+   ()    Separate Groups
+
+
+
+   1- HTML
+   2- Css
+   3- PHP
+
+   1) HTML
+   2) Css 
+   3) PHP
+
+   1> HTML
+   2> Css
+   3> PHP
+   >>>>>>>>>>>>>>>> the regural expression to select :
+                 >>>  (\d-) (\w+)                # to select the first 3 
+                 >>>  (\d\)) (\w+)               # to select the mid 3
+                 >>>  (\d>) (\w+)                # to select the last 3
+                      "| mean or" && "\) to escape the error" && "() to group the letters"
+                 >>>  (\d-|\d\)|\d>) (\w+)       # to select all of them
+     
+
+
+   012 4578 213
+   011 4568 (345)
+   >>>>>>>>>>>>>>>> the regural expression to select :
+                 >>>  (\d{3}) (\d{4}) (\d{3})              # to select the first one
+                 >>>  (\d{3}) (\d{4}) (\(\d{3}\))          # to select the second one
+
+                 >>>  (\d{3}) (\d{4}) (\d{3}|\(\d{3}\))    # to select all of them
+ 
+
+
+   http://www.elzero.net
+   http://elzero.org
+   https://elzerocourses.com
+   Hello Osama Elzero
+   >>>>>>>>>>>>>>>> the rugural expression to select :
+                 >>>  (https?://)(www/.)?(\w+)\.(\w+)
+
+
+                       IMP :-
+> Regular Expressions Re Module Search and FindAll :-
+
+ search()   => Search a string for a Match and Return a First Match Only
+ findall()  => Return a List Of All Matches and Empty List If No Match
+
+ re.search(r"Regular expression", "your string or data", re.function name)
+                                                         re.M or re.MULTILINE       searching in multilines
+                                                         re.I or re.IGNORECASE      searching in all cases "lower or upper"
+                                                         re.DOTALL                  searching all things and new lines
+                                                         re.VARBOSE                 searching with ignoring commints
+
+
+ Email pattern  =>  [A-z0-9\.]+@[A-z0-9]+\.(com|net|org|imfo)
+
+
+
+EX :-
+
+import re
+my_search = re.search(r"[A-Z]", "OsamaElzero")
+print(my_search)        # <re.Match object; span=(0, 1), match='O'>       "span mean index"
+   
+
+
+import re
+my_search = re.search(r"[A-Z]", "osamaElzero")
+print(my_search)        # <re.Match object; span=(5, 6), match='E'>
+
+
+
+import re
+my_search = re.search(r"[A-Z]{2}", "OOsamaElzero")
+print(my_search)        # <re.Match object; span=(0, 2), match='OO'>
+
+
+
+import re
+is_email = re.search(r"[A-z0-9\.]+@[A-z0-9]+\.(com|net)", "os@osama.com")
+if is_email :
+    print("This is a valid email")
+else :
+    print("This is not valid email")        # This is a valid email
+
+
+
+
+import re 
+email_input = input("Please write your email: ")
+search = re.findall(r"[A-z0-9\.]+@[A-z0-9]+\.com|net", email_input)
+empty_list = []
+if search != [] :
+    empty_list.append(search)
+    print("Email added")
+else :
+    print("Invalid email")
+for email in empty_list :
+    print(email)                       # Please write your email: Osama@gmial.com
+                                         Email added
+                                         Osama@gmial.com
+
+
+
+> Regular Expressions Re Module Split and Sub :-
+
+ split(pattern, string, Maxsplit)            => Return a list of elements splitted on each match
+ sub(pattern, replace, string, replacecount) => Replace matches with what you want
+ 
+
+EX :-
+
+import re
+string_one = "I Love Python Programming language"
+search_one = re.split(r"\s", string_one)
+print(search_one)                 # ['I', 'Love', 'Python', 'Programming', 'language']
+
+
+
+import re
+string_one = "I Love Python Programming language"
+search_one = re.split(r"\s", string_one, 2)
+print(search_one)                 # ['I', 'Love', 'Python Programming language']
+
+
+
+import re
+string_two = "How-To_Wtire_A_very-Good-Article"
+search_two = re.split(r"-|_", string_two)
+print(search_two)                 # ['How', 'To', 'Wtire', 'A', 'very', 'Good', 'Article']
+
+
+
+import re
+string_two = "How-To_Wtire_A_very-Good-Article"
+search_two = re.split(r"-|_", string_two)
+print(search_two)
+for counter, word in enumerate(search_two, 1) :        
+    if len(word) >= 2 :                                    OR  if len(word) == 1 :
+        print(f"{counter} => {word.lower()}")                      continue 
+                                                               print(f"{counter} => {word.lower()}")
+         Result >>>   ['How', 'To', 'Wtire', 'A', 'very', 'Good', 'Article']
+                      1 => how
+                      2 => to
+                      3 => wtire
+                      5 => very
+                      6 => good
+                      7 => article 
+
+
+
+import re
+my_string = "I Love Python Programming Language"
+my_search = re.sub("\s", "-", my_string)
+print(my_search)                  # I-Love-Python-Programming-Language
+
+
+
+import re
+my_string = "I Love Python Programming Language"
+my_search = re.sub("\s", "-", my_string, 2)
+print(my_search)                  # I-Love-Python Programming Language
+
+
+
+> Regular Expressions Group Training's and Flags :-
+  
+  https://www.elzero.org:8080/category.php?article=105?name=how-to-do
+  https://www.elzero.org/category.php?article=105?name=how-to-do
+  https://elzero.org/category=50?article=105?name=how-to-do
+  http://elzero.org/category=50?article=105?name=how-to-do
+  http://elzero.org
+  http://elzero.net
+
+  >>>>>>>>>> The regular expression is :
+             >>> (https?)://(www\.)?(\w+)\.(\w+):?(\d+)?/?(.+)
+
+
+
+import re
+my_web = "https://www.elzero.org:8080/category.php?article=105?name=how-to-do"
+search = re.search(r"(https?)://(www\.)?(\w+)\.(\w+):?(\d+)?/?(.+)", my_web)
+print(search.group())             # print whole url
+print(search.groups())            # print groups of the url and it gives error if the url has non group of the Regular expression
+for group in search.groups() :
+    print(group)
+              
+    The Result :-
+https://www.elzero.org:8080/category.php?article=105?name=how-to-do            
+('https', 'www.', 'elzero', 'org', '8080', 'category.php?article=105?name=how-to-do')                                                                           -do')
+https
+www.
+elzero
+org
+8080
+category.php?article=105?name=how-to-do
+
+
+
+
+import re
+my_web = "https://www.elzero.org:8080/category.php?article=105?name=how-to-do"
+search = re.search(r"(https?)://(www\.)?(\w+)\.(\w+):?(\d+)?/?(.+)", my_web)
+print(search.group())             # print whole url
+print(search.groups())            # print groups of the url and it gives error if the url has non group of the Regular expression
+print(f"Protocol:         {search.group(1)}")
+print(f"Sub Domain:       {search.group(2)}")
+print(f"Domain Name:      {search.group(3)}")
+print(f"Top Level Domain: {search.group(4)}")
+print(f"Port:             {search.group(5)}")
+print(f"Query String:     {search.group(6)}")
+
+   The Result :-
+https://www.elzero.org:8080/category.php?article=105?name=how-to-do
+('https', 'www.', 'elzero', 'org', '8080', 'category.php?article=105?name=how-to-do')
+Protocol:         https
+Sub Domain:       www.
+Domain Name:      elzero
+Top Level Domain: org
+Port:             8080
+Query String:     category.php?article=105?name=how-to-do
+----------------------------------------------------------------------------------------------------------
+OOP Intro :-
+ Python support Object Oriented Programming.
+ OOP is a Paradigm or Coding Style
+ Paradigm : structuring program so the Method[function] and attributes[data] are Bundled into objects
+ Methods : Act as function taht use the information of the object
+ Python is Multi-Paradigm Programming language [Procedural, OOP, Functional]
+ Procedural : structure app like recipe, sets of steps to make the task
+ Function : built on the concept of mathematical function
+ OOP Allow you to organizw your code and make it readable and reusable
+ Everything Python is object
+
+If Man is object :-
+ Attributes [data] : name, age, address, phone number, info[can be different]
+ Methods[Behaviors] : walking, eating, singing, playing
+
+Class :-
+ Class is the template for creating objects [object constructor | blueprint]
+ Class car can create many cars object 
+ Class user can create many users object
+
+
+
+> OOP Class Syntax and Info :-
+   Class is the blueprint or constructor of the object
+   Class instantiate means create instance of a class
+   INstance : object created from class and have their methods and attributes
+   Class defined with keyword class
+   Class name written with pascalcase [UpperCamelCase] style
+   Class may contain methods and attributes
+   When creating object python look for the built in __init__ 
+   __init__ method called every time you create object from class
+   __init__ method  is initialize the data for the object
+   Any method with __ in the start and end called Dunder or Magic method
+   Self refer to the current instance created from the class and must be first param
+   Self can be named anything
+   In python you don't need to call new() keyword to create object
+   
+Syntax :
+
+class name:
+    'Class Attributes'
+    constructor : do instantiantion [ create instance from a class ]
+    each instance is separate object  
+    def __init__(self, other_data)
+        body of function   'Instance attribute'
+ 
+EX :-
+
+class Member :
+    def __init__(self) :     # Method (Argument or Parameter)
+        print("A new member has been added")
+Member()                     # A new member has been added
+member_one = Member()        # A new member has been added
+print(member_one.__class__)  # <class '__main__.Member'> 
+
+
+
+> OOP Instance Attributes and Methods Part 1:-
+  Self : point to instance created from class
+  Instance Attributes : instance attributes defined inside the constructor
+
+  Instance Methods : Must take self parameter which point to instance created from class
+  Instance Methods can have more than one parameter like any function 
+  Instance Methods can freely access attributes and methods on the same object
+  Instance Methods can access the class itself 
+
+
+EX :-
+
+class Member :
+    def __init__(self, first_name, middle_name, last_name) :    # 4 parameters in "Method Cube icon"
+        self.fname = first_name                                 # Instance Attribute one "Attributes [] icon"
+        self.mname = middle_name                                # Instance Attribute two "Attributes [] icon"
+        self.lname = last_name                                  # Instance Attribute tree "Attributes [] icon"
+member_one = Member("OsaMa", "FaThy", "MohaMMed")               # Instance Member(3 argument)
+member_two = Member("Ahmed", "Ali", "Mahmoud")
+print(member_one.fname, member_one.mname, member_one.lname)     # OsaMa FaThy MohaMMed
+print(member_two.fname)                                         # Ahmed
+
+  
+
+> OOP Instance Attributes Methods Part 2:-
+  
+
+
+class Member :                                                       # Instance name   
+    def __init__(self, first_name, middle_name, last_name, gender) : # Method 1 take 4 param
+        self.fname = first_name                                      # Instance Attribute
+        self.mname = middle_name                                     # Instance Attribute
+        self.lname = last_name                                       # Instance Attribute
+        self.gender = gender                                         # Instance Attribute
+    def full_name(self) :                                  # Instance Method 2 didn't take any param except self
+        return f"{self.fname} {self.mname} {self.lname}"   # self from first method
+    def name_with_title(self) :                  # Instance Method 3 and didn't take any param except self   
+        if self.gender == "Male" :               
+            return f"Hello Mr {self.fname}"      # use self 
+        elif self.gender == "Female":            
+            return f"Hello Mrs {self.fname}"     # use self again
+        else : 
+            return f"Hello {self.fname}"         # use self again
+    def get_all_info(self) :                                                        # Instance Method 4 and didn't take any param except self
+        return f"{self.name_with_title()}, Your full name is: {self.full_name()}"   # use Instance Method 3 and Method 2 in method 4 
+member_one = Member("OsaMa", "FaThy", "MohaMMed", "Male")
+member_two = Member("Ahmed", "Ali", "Mahmoud", "Male")
+member_three = Member("Mona", "Ali", "Mahmoud", "Female")
+print(member_one.full_name())          # Instance_name.param     >> OsaMa FaThy MohaMMed
+print(member_one.name_with_title())    # Instance_name.method3   >> Hello Mr OsaMa
+print(member_three.name_with_title())  # Instance_name.method3   >> Hello Mrs Mona
+print(member_one.get_all_info())       # Instance_name.method4   >> Hello Mr OsaMa, Your full name is: OsaMa FaThy MohaMMed
+
+
+
+> OOP Class Attributes :-
+   Class Attributes : Attributes Defined Outside the constractor.
+
+
+class Member :
+    not_allowed_names = ["Hell", "Shit", "Baby"] # Class Attribute   
+    users_num = 0                                # Class Attribute  
+    def __init__(self, first_name, middle_name, last_name, gender) : # Instance Method 1       
+        self.fname = first_name
+        self.mname = middle_name
+        self.lname = last_name 
+        self.gender = gender
+        Member.users_num += 1
+    def full_name(self) :                             # Instance Method 2
+        if self.fname in Member.not_allowed_names :
+            raise ValueError("Name not allowed")
+        else :
+            return f"{self.fname} {self.mname} {self.lname}"
+    def name_with_title(self) :                  # Instance Method 3
+        if self.gender == "Male" :
+            return f"Hello Mr {self.fname}"
+        elif self.gender == "Female": 
+            return f"Hello Mrs {self.fname}"
+        else : 
+            return f"Hello {self.fname}"
+    def get_all_info(self) :                     # Instance Method 4
+        return f"{self.name_with_title()}, Your full name is: {self.full_name()}"
+    def delete_user(self) :                      # Instance Method 5 
+        Member.users_num -= 1
+        return f"User {self.fname} is deleted"
+print(Member.users_num)                                    # 0
+member_one = Member("OsaMa", "FaThy", "MohaMMed", "Male")  
+member_two = Member("Ahmed", "Ali", "Mahmoud", "Male")
+member_three = Member("Mona", "Ali", "Mahmoud", "Female")
+member_four = Member("Baby", "Ali", "Mahmoud", "Female")
+print(Member.users_num)                                    # 4
+print(member_four.delete_user())                           # User Baby is deleted
+print(Member.users_num)                                    # 3
+print(member_four.get_all_info())                          # It will make and ValueError "Name not allowed"
+
+
+
+> OOP Class Methods and Static Methods :-
+
+Class Method :-
+ Marked with @classmethod Decorated to flag it as class Method
+ It take cls parameter not self to point to the class not the Instance
+ It doesn't require creation of a class instance 
+ Used when you want to do something with the class itself 
+
+Static Methods :-
+ It takes no parameters
+ Its bound to the class not instance 
+ Used when doing something doesn't have access to object or class related to class 
+
+
+
+class Member :
+    not_allowed_names = ["Hell", "Shit", "Baby"]           # Class Attribute   
+    users_num = 0
+    @classmethod                            # Class Method Flag
+    def Show_users_count(cls) :             # Class Method
+        print(f"We have {cls.users_num} Users in our system")
+    @staticmethod                           # Static Method Flag
+    def say_hello() :                       # Static Method
+        print("Hello from static method") 
+    def __init__(self, first_name, middle_name, last_name, gender) :       
+        self.fname = first_name
+        self.mname = middle_name
+        self.lname = last_name 
+        self.gender = gender
+        Member.users_num += 1
+    def full_name(self) :                   # Instance Method
+        if self.fname in Member.not_allowed_names :
+            raise ValueError("Name not allowed")
+        else :
+            return f"{self.fname} {self.mname} {self.lname}"
+    def name_with_title(self) :
+        if self.gender == "Male" :
+            return f"Hello Mr {self.fname}"
+        elif self.gender == "Female": 
+            return f"Hello Mrs {self.fname}"
+        else : 
+            return f"Hello {self.fname}"
+    def get_all_info(self) :
+        return f"{self.name_with_title()}, Your full name is: {self.full_name()}"
+    def delete_user(self) :
+        Member.users_num -= 1
+        return f"User {self.fname} is deleted"
+Member.Show_users_count()                                       # It's like print(Member.users_num)
+member_one = Member("OsaMa", "FaThy", "MohaMMed", "Male")
+member_two = Member("Ahmed", "Ali", "Mahmoud", "Male")
+member_three = Member("Mona", "Ali", "Mahmoud", "Female")
+member_four = Member("Baby", "Ali", "Mahmoud", "Female")
+Member.Show_users_count()              # Class Method Call      # It's like print(Member.users_num)
+print(member_four.delete_user())       # Normal call
+Member.Show_users_count()                                       # It's like print(Member.users_num)
+print(Member.full_name(member_one))    # Under hood of >>       # It's like print(member_one.full_name) 
+Member.say_hello()                     # Static Method call
+
+     We have 0 Users in our system
+     We have 4 Users in our system
+     User Baby is deleted 
+     We have 3 Users in our system
+     OsaMa FaThy MohaMMed
+     Hello from static method
+
+
+
+> OOP Magic Methods :-
+   Everything in python is an object
+   __init__ called automatically when instantiating class
+   self.__class__ the class to which a class Instance belongs
+   __str__ gives a human-readable output of the object
+   __len__ return the length of the container
+           Called when we use the built-in len() function on the object
+
+
+class skill :
+    def __init__(self) :
+        self.skills = ["Html", "Css", "Js"]
+profile = skill()
+print(profile.__class__)        # to Know the class belongs to  (<class '__main__.skill'>) 
+
+ 
+
+my_string = "OsaMa"           # Instance my_string belongs to "str class"
+print(type(my_string))        # <class 'str'>
+print(my_string.__class__)    # <class 'str'>
+
+
+
+my_number = 12                # Instance my_string belongs to "int class"
+print(type(my_number))        # <class 'int'>
+print(my_number.__class__)    # <class 'int'>
+
+
+
+my_string = "OsaMa"             # Instance my_string belongs to "str class"
+print(type(my_string))                                          >> <class 'str'>
+print(my_string.__class__)      # instance.magic_method         >> <class 'str'>
+print(str.__class__(my_string)) # class.magic_method(param)     >> <class 'str'>
+print(my_string.upper())        # instance.method               >> OSAMA
+print(str.upper(my_string))     # class.method(param)           >> OSAMA
+
+
+
+my_number = 12                  # Instance my_string belongs to "int class"
+print(type(my_number))                                          >> <class 'int'>
+print(my_number.__class__)      # instance.method               >> <class 'int'>
+print(int.__class__(my_number)) # class.magic_method(param)     >> <class 'int'>
+
+
+
+class skill :
+    def __init__(self) :
+        self.skills = ["Html", "Css", "Js"]
+    def __str__(self) :
+        return f"This is my skills: {self.skills}"
+    def __len__(self) :
+        return len(self.skills)
+profile = skill()
+print(profile)                     # to Know the class belongs to and if you define __str__ the result is This is my skills: ['Html', 'Css', 'Js']
+print(len(profile))                # Use __len__ method    >> 3 
+profile.skills.append("Python")    # add a skill
+print(profile)                     # This is my skills: ['Html', 'Css', 'Js', 'Python']
+print(len(profile))                # 4
+
+
+
+
+> OOP Inheritance :-
+   class one :
+   class two(class one) :         # to inherite class one methods
+
+
+class Food :                                            # Base class
+    def __init__(self) :
+        print("Food is created from base class")
+    def eat(self) :
+        print("Eat method from main class")
+class Apple(Food) :
+    def __init__(self) :
+        print("Apple is created from derived class")   # Derived class 
+food_one = Food()                # Instance one from Food class      > Food is created from base class
+food_two = Apple()               # Instance two from Apple class     > Apple is created from derived class
+food_two.eat()                   # Inherite method from first class  > Eat method from main class
+
+
+
+
+class Food :                                            # Base class
+    def __init__(self, name) :
+        self.name = name
+        print(f"{self.name} is created from base class")
+    def eat(self) :
+        print("Eat method from main class")
+class Apple(Food) :                                     # Derived class     
+    def __init__(self, name) :
+        Food.__init__(self, name)       # create instance from base class
+        print(f"{self.name} is created from derived class")   
+food_one = Food("Pizza")                # Instance one from Food class    > Pizza is created from base class 
+food_two = Apple("Pizza")               # Instance two from Apple class   > Pizza is created from base class
+                 							  > Pizza is created from derived class
+food_two.eat()                         # inherite method from base class by (Food) > Eat method from base class
+
+
+
+OR You can use "super().method(param)" instead of "class.method(param)
+
+
+class Food :                                            # Base class
+    def __init__(self, name) :
+        self.name = name
+        print(f"{self.name} is created from base class")
+    def eat(self) :
+        print("Eat method from base class")
+class Apple(Food) :                                     # Derived class
+    def __init__(self, name) :
+        # Food.__init__(self, name)       # create instance from base class
+        super().__init__(name)
+        print(f"{self.name} is created from derived class")    
+# food_one = Food("Pizza")                # Instance one from Food class
+food_two = Apple("Pizza")               # Instance two from Apple class
+food_two.eat()
+
+
+
+
+class Food :                                            # Base class
+    def __init__(self, name, price) :
+        self.name = name
+        self.price = price
+        print(f"{self.name} is created from base class")
+    def eat(self) :
+        print("Eat method from base class")
+class Apple(Food) :                                    # Derived class
+    def __init__(self, name, price, amount) :
+        # Food.__init__(self, name)       # create instance from base class  "Same as super().magic_method(param)"
+        super().__init__(name, price)     # Inherite the name and price param from base class
+        self.amount = amount              # created in derived class
+        print(f"{self.name} is created from derived class, price is {self.price}, amount is {self.amount}")   
+    def catch(self) :
+        print("Get from tree from derived class")
+# food_one = Food("Pizza")                # Instance one from Food class
+food_two = Apple("Pizza", 150, 5)         # Instance two from Apple class      > pizza is created from base class, price 150
+                                                                               > pizza is created from derived class, price is 150, amount is 5
+food_two.eat()                            # Inherite from base class           > Eat method from base class
+food_two.catch()                          # Exsist in derived class            > Get from tree from derived class
+
+
+
+> OOP Multiple Inheritance and Methods Overriding :-
+
+Override :-
+
+class Food :                                            # Base class
+    def __init__(self, name, price) :
+        self.name = name
+        self.price = price
+        print(f"{self.name} is created from base class, price {self.price}")
+    def eat(self) :
+        print("Eat method from base class")
+class Apple(Food) :                                    # Derived class
+    def __init__(self, name, price, amount) :
+        # Food.__init__(self, name)       # create instance from base class
+        super().__init__(name, price)     # Inherite the name and price param from base class
+        self.amount = amount              # created in derived class
+        print(f"{self.name} is created from derived class, price is {self.price}, amount is {self.amount}")   
+    def catch(self) :
+        print("Get from tree from derived class")
+    def eat(self) :                                   # Override Method
+        print("Eat method from derivede class")
+food_two = Apple("pizza", 150, 5)         # Instance two from Apple class > pizza is created from base class, price 150
+                                                                            pizza is created from derived class, price is 150, amount is 5
+food_two.eat()                            # Inherite from base class      > Eat method from derivede class
+
+
+
+
+Muliple Inheritance :-
+
+class BaseOne :
+    def __init__(self) :
+        print("Base One")
+    def func_one(self) :
+        print("One")
+class BaseTwo :
+    def __init__(self) :
+        print("Base Two")
+    def func_two(self) :
+        print("Two")
+class Derived(BaseOne, BaseTwo) :
+    pass
+my_var = Derived()      # Base One
+my_var.func_one()       # One
+my_var.func_two()       # Two
+print(Derived.mro())    # Method Resolution Order  > [<class '__main__.Derived'>, <class '__main__.BaseOne'>, <class '__main__.BaseTwo'>, <class 'object'>]
+
+
+
+class Base :                     # Base class
+    pass 
+class DerivedOne(Base) :         # Inherite Base class Methods
+    pass
+class DerivedTwo(DerivedOne) :   # Inherite Base and DerivedOne Methods
+    pass
+
+
+
+
+> OOP Polymorphism :-       "It's mean same Method in many places do defferent things"
+
+ 
+n1 = 10
+n2 = 20
+print(n1 + n2)        # 30
+
+
+
+s1 = "Hello"
+s2 = "Pyhton" 
+print(s1 + " " + s2)     # Hello Python
+
+
+
+print(len([1, 2, 3, 4, 5, 6]))               # Number of elements    >> 6
+print(len("OsaMa FaThy"))                    # Number of characters  >> 11
+print(len({"Key_One" : 1, "Key_Two" : 2}))   # Number of keys        >> 2
+
+
+
+
+class A :
+    def do_something(self) :
+        print("From class A")
+        raise NotImplementedError("Derived class must implement this method")
+class B(A) : 
+    pass
+class C(A) : 
+    def do_something(self) :
+        print("From class C")
+my_instance = C()
+my_instance.do_something()   # It will raise an Error if you didn't def do_something Method   > From class C
+
+
+
+
+> OOP Encapsulation :-                 " Just rules you can manipulate them"
+
+Attributes = Variables = Properties
+
+Encapsulation :
+  Restrict access to the data stored in the Attributes and Methods
+
+
+Public :
+  Every Attribute and Method that we used so far is public
+  Attributes and Methods can be Modified and run from everywhere
+  Inside our outside the class
+
+
+Protected :
+  Attributes and Methods can be accessed from within the class and sub classes
+  Attributes and Methods prefixed with one Underscore _
+
+
+Private :
+  Attributes and Methods can be accessed from within the class or object only
+  Attributes cannot Modified from outside the class
+  Attributes and Methods prefixed with 2 Underscores __
+
+
+
+Public EX: 
+
+class Member :
+    def __init__(self, name) :
+        self.name = name      # Public can be Modified
+one = Member("Ahmed")
+print(one.name)            # Ahmed
+one.name = "Sayed"
+print(one.name)            # Sayed
+
+
+
+Protected EX: 
+  
+class Member :
+    def __init__(self, name) :
+        self._name = name      # Protected but for knowledge only
+one = Member("Ahmed")
+print(one._name)            # it's not exsist but if you type it, it will be printed  > Ahmed
+one._name = "Sayed"
+print(one._name)            # It shouldn't be Modified but this only in Python Sayed
+
+
+
+Private EX:
+
+class Member :
+    def __init__(self, name) :
+        self.__name = name      # Private
+    def say_hello(self) :
+        return f"Hello {self.__name}"
+one = Member("Ahmed")
+print(one.say_hello())       # Hello Ahmed
+print(one._Member__name)     # Instance._class name__porperty to print a Private             >  Ahmed
+print(one.__name)            # it's not exsist and if you type it, it will give you an Error > AttributeError: 'Member' object has no attribute '__name'
+
+
+
+class Member :
+    def __init__(self, name) :
+        self.__name = name        # Private
+    def say_hello(self) :
+        return f"Hello {self.__name}"
+one = Member("Ahmed")
+# one.__name = "Sayed"            # Can't change it like that
+one._Member__name = "Sayed"       # now you can change it 
+print(one._Member__name)          # Sayed
+
+
+
+> OOP Getters & Setters :-
+
+class Member :
+    def __init__(self, name) :
+        self.__name = name              # Private
+    def say_hello(self) :
+        return f"Hello {self.__name}"
+    def get_name(self) :                # Getter 
+        return self.__name      
+    def set_name(self, new_name) :      # Setter
+        self.__name = new_name
+one = Member("Ahmed")
+# one._Member__name = "Sayed"   # Not allowed Method
+# print(one._Member__name)      # Not allowed Method
+print(one.get_name())                  # Ahmed
+one.set_name("Abbas")
+print(one.get_name())                  # Abbas
+
+
+
+> OOP @Property Decorator :-
+   if you make a Method as Property you can call it without () but if you call it with () it will give error
+
+
+class Member :
+    def __init__(self, name, age) :
+        self.name = name
+        self.age = age
+    def say_hello(self) :
+        return f"Hello {self.name}"
+    @property    
+    def age_in_days(self) :
+        return self.age * 365
+one = Member("OsaMa", 20)
+print(one.name)             # Property "No need for ()"   > OsaMa
+print(one.age)              # Property "No need for ()"   > 20
+print(one.say_hello())      # Method "should type ()" you can make it property by add @property above the Method
+                              Hello OsaMa
+# print(one.age_in_days())  # Method "should type ()" you can make it property by add @property above the Method
+print(one.age_in_days)      # if you type () it will give error caze it a Property  > 7300
+
+
+
+
+> OOP ABC's Abstract Base Class :-
+   Class called abstract class if it has one or more abstract methods
+   abc adding @absttractmethod decorator on the methods
+   ABCMeta class is a metaclass used for defining abstract base class
+   Abstract class and Method should be followed when you call it
+
+
+from abc import ABCMeta, abstractmethod        # ABC Module for Abstract
+class Programming(metaclass=ABCMeta) :         # Abstract class               > You should follow it
+    @abstractmethod                            # keyword for abstract method  > You should follow it
+    def has_oop(self) :
+        pass
+    def has_name(self) :                       # it's not an abstract Method you should follow 
+        pass
+class Python(Programming) :
+    def has_oop(self):
+        return "Yes"
+class Pascal(Programming) :
+    def has_oop(self):
+        return "No"
+class Pc(Programming) :
+    pass
+one = Python()            # it follows the abstract class and method
+print(one.has_oop())      # Yes
+two = Pascal()            # it follows the abstract class and method
+print(two.has_oop())      # No
+three = Pc()              # it isn't following the abstract class and method "you should [define the has_oop()] and has_name if it's an abstract method"
+print(three.has_oop())    # TypeError: Can't instantiate abstract class Pc with abstract method has_oop
+-----------------------------------------------------------------------------------------------------------------
+Intro about Database :
+  Database is a place where we can store data
+  Database organized into tables (Users, Categories)
+  Tables has columns (ID, Username, Password)
+  There's many types of Databases (MongoDB, MySQL, SQLite)
+  SQL stand for Structured Query Language
+  SQLite => can run in memory or in a single file
+  You can Browse file with "https://sqlitebrowser.org/"
+  Data inside database has types (Text, Integer, Date)
+  You see the changes in DB Browser for SQLite
+   
+  variable = sqlite3.connect("name.db")               # To Create the Database
+  cr = variable.cursor()                              # To setup the Cursor
+  cr.execute("CREATE IF NOT EXISSTS database_name(column type, column type, ....)")     # Make a Database hase 2 column or more 
+  cr.execute("INSERT INTO database_name("column") VALUES("value")")                     # To Add a Data to the Database
+  cr.execute("SELECT column FROM database_name")                                        # To Select a column or use * to select all
+  cr.execute("UPDATE database_name SET column = 'value' WHERE column = value")          # To Update a value in a Database
+  cr.execute("DELETE FROM database_name WHERE column = value")                          # To Delete a value in a Database
+
+
+
+
+> Database Create Database & Connect :-
+   
+Connect, Create and Excute :-
+
+
+# Import SQLite Module
+import sqlite3
+# Create Database and Connect 
+db = sqlite3.connect("app.db")       # db => database  Connect = make a new database
+# Create The Table and Fields  "CREATE TABLE AND TEXT AND INTEGER ARE KEYWORDS"
+db.execute("CREATE TABLE IF NOT EXISTS skills(name TEXT, progress INTEGER, user_id INTEGER)")    # execute("sql query 'query string'")
+# Close Database
+db.close()
+
+
+
+
+> Database Insert Data Into Database :-
+   Cursor => All Operation in SQL done by Cursor not the Connection itself
+   Commit => Save All Change 
+
+
+# Import SQLite Module
+import sqlite3
+# Create Database and Connect 
+db = sqlite3.connect("app.db")       # db => database  Connect = make a new database
+# Setting up the Cursor
+cr = db.cursor()
+# Create The Table and Fields  "CREATE TABLE AND TEXT AND INTEGER ARE KEYWORDS"
+cr.execute("CREATE TABLE IF NOT EXISTS users(user_id INTEGER, name TEXT)")
+cr.execute("CREATE TABLE IF NOT EXISTS skills(name TEXT, progress INTEGER, user_id INTEGER)")    # execute("sql query 'query string'")
+# Inserting Data 
+cr.execute("INSERT INTO users(user_id, name) VALUES(1, 'Ahmed')")
+cr.execute("INSERT INTO users(user_id, name) VALUES(2, 'OsaMa')")
+cr.execute("INSERT INTO users(user_id, name) VALUES(3, 'Sayed')")
+# Save (Commit) Changes 
+db.commit()
+# Close Database
+db.close()
+
+
+
+
+
+# Import SQLite Module
+import sqlite3
+# Create Database and Connect 
+db = sqlite3.connect("app.db")       # db => database  Connect = make a new database
+# Setting up the Cursor
+cr = db.cursor()
+# Create The Table and Fields  "CREATE TABLE AND TEXT AND INTEGER ARE KEYWORDS"
+cr.execute("CREATE TABLE IF NOT EXISTS users(user_id INTEGER, name TEXT)")
+cr.execute("CREATE TABLE IF NOT EXISTS skills(name TEXT, progress INTEGER, user_id INTEGER)")    # execute("sql query 'query string'")
+# Inserting Data From List
+my_list = ["Ahmed", "Sayed", "Mahmoud", "Ali", "Kamed", "Ibrahim", "Enas"]
+for id, user in enumerate(my_list, 1) :
+    cr.execute(f"INSERT INTO users(user_id, name) VALUES({id}, '{user}')")
+# Save (Commit) Changes 
+db.commit()
+# Close Database
+db.close()
+
+
+
+
+
+
+
+> Database SQLite Retrieve Data from Database :-
+   fetchone => retruns a single record or none if no more rows are available "one row per each print or fetch"
+   fetchall => fetches all the rows of a query result. It retruns all the rows as a list of tuples
+               An empty list is returned if there is no record to fetch
+   fetchmany(size) => Like fetchall but it asks you for how many rows you want to disply
+
+
+
+# Import SQLite Module
+import sqlite3
+# Create Database and Connect 
+db = sqlite3.connect("app.db")       # db => database  Connect = make a new database
+# Setting up the Cursor
+cr = db.cursor()
+# Create The Table and Fields  "CREATE TABLE AND TEXT AND INTEGER ARE KEYWORDS"
+cr.execute("CREATE TABLE IF NOT EXISTS users(user_id INTEGER, name TEXT)")
+cr.execute("CREATE TABLE IF NOT EXISTS skills(name TEXT, progress INTEGER, user_id INTEGER)")    # execute("sql query 'query string'")
+# Inserting Data 
+# cr.execute("INSERT INTO users(user_id, name) VALUES(1, 'Ahmed')")
+# cr.execute("INSERT INTO users(user_id, name) VALUES(2, 'OsaMa')")
+# cr.execute("INSERT INTO users(user_id, name) VALUES(3, 'Sayed')")
+
+# Fetch Data 
+cr.execute("SELECT * FROM users")  # You can select one column or two by seperate with comma or select all by *
+print(cr.fetchone())         # show one row if exists      (1, 'Ahmed')      
+print(cr.fetchone())         # show one row if exists      (2, 'OsaMa')
+print(cr.fetchone())         # show one row if exists      (3, 'Sayed')
+print(cr.fetchone())         # show one row if exists      None 
+
+print(cr.fetchall())         # show all rows as a list of tuples     [(1, 'Ahmed'), (2, 'OsaMa'), (3, 'Sayed')]
+
+print(cr.fetchmany(2))       # show wanted num of rows               [(1, 'Ahmed'), (2, 'OsaMa')]
+# Save (Commit) Changes 
+db.commit()
+# Close Database
+db.close()
+
+
+
+
+
+> Database SQLite Trainging On EVerything :-
+    
+
+import sqlite3
+def get_all_data() :
+    try :                                           # Try the Code 
+        # Connect to database 
+        db = sqlite3.connect("app.db")
+        print("Connected to Database Successfully")
+        # Setting up the Cursor
+        cr = db.cursor()
+        # Fetch Data from Database
+        cr.execute("SELECT * FROM users")
+        # Assign Data to Variable
+        results = cr.fetchall()
+        # Print Number of Rows
+        print(f"Database has {len(results)} Rows.")
+        # Printing Massage
+        print("Showing Data.....")
+        # Loop in Results
+        for row in results :
+            print(f"User Id => {row[0]}", end = " - ")      # row[num]  => tuple[index] "if you type 1 ti shows Names"
+            print(f"User Name => {row[1]}")
+    except sqlite3.Error as er :                      # Runs if the code has Error
+        print(f"Error Reading Data {er}")
+    finally :                                         # Always run
+        if (db) :
+            # Close Database Connection
+            db.close()
+            print("Connection to Database is Closed.")
+get_all_data()
+
+
+     Result is :-
+Connected to Database Successfully
+Database has 3 Rows.
+Showing Data.....
+User Id => 1 - User Name => Ahmed
+User Id => 2 - User Name => OsaMa
+User Id => 3 - User Name => Sayed
+Connection to Database is Closed.
+
+
+
+
+
+> Database SQLite Update & Delete From Database :-
+
+
+# Import SQLite Module
+import sqlite3
+# Create Database and Connect
+db = sqlite3.connect("app.db")
+# Setting the Cursor
+cr = db.cursor()
+# Update Data
+cr.execute("UPDATE users SET name = 'Gamal' WHERE user_id = 1")
+cr.execute("UPDATE users SET name = 'Mahmoud' WHERE user_id = 2")
+cr.execute("UPDATE users SET name = 'Ameer' WHERE user_id = 3")
+cr.execute("UPDATE users SET name = 'OsaMa' WHERE user_id = 4")
+# Delete Data
+cr.execute("DELETE FROM users WHERE user_id = 1")
+# Fetch Data 
+cr.execute("SELECT * FROM users")
+print(cr.fetchone())
+print(cr.fetchone())
+print(cr.fetchone())
+print(cr.fetchone())
+# Save Changes
+db.commit()
+# Close the Database 
+db.close()
+
+                Result is :-
+
+(2, 'Mahmoud')
+(3, 'Ameer')
+None
+None
+
+
+
+
+
+
+> Database SQLite Create Skills App Part 1 :-
+
+> Database SQLite Create Skills App Part 2 :-
+
+> Database SQLite Create Skills App Part 3 :-
+
+> Database SQLite Create Skills App Part 4 :-
+
+
+
+# Import SQLite Module
+import sqlite3
+# Create Database and Connect to it
+db = sqlite3.connect("app.db")
+# Setting up the Cursor
+cr = db.cursor()
+def commit_and_close() :
+    """Commit Changes and Close Connection to Database"""
+    # Save (commit) Changes
+    db.commit()
+    # Close the Database
+    db.close()
+    print("Connection to Database is Closed.")
+# My User ID
+uid = 1
+# Input Big Massage 
+input_massage = """
+What Do You want to Do ?
+"s" => Show All Skills
+"a" => Add a New Skill
+"d" => Delete a Skill
+"u" => Update Skill Progress
+"q" => Quit the App
+Choose Option : 
+"""
+# Input Option Choose 
+user_input = input(input_massage).strip().lower()
+# Commands List 
+Commands_list = ["s", "a", "d", "u", "q"]
+# Define the Methods
+def show_skills() :
+    cr.execute(f"SELECT * FROM skills WHERE user_id = '{uid}'")
+    results = cr.fetchall()
+    print(f"You have {len(results)} Skillsd.")
+    if len(results) > 0 :
+        print("Showing Skills with progress : ")
+    for row in results :
+        print(f"Skill => {row[0]}, Progress => {row[1]}%")
+    commit_and_close()
+def add_skill() :
+    sk = input("Write Skill name : ").strip().capitalize()
+    cr.execute(f"SELECT name FROM skills WHERE name = '{sk}' AND user_id = '{uid}'")
+    results = cr.fetchone()
+    if results == None :
+        prog = input("Write Skill Progress : ").strip()
+        cr.execute(f"INSERT INTO skills(name, progress, user_id) VALUES('{sk}', '{prog}', '{uid}')")
+        print("Skill Added.")
+        commit_and_close()
+    else :    
+        print("Skill is Exists, Do you want to Upate It's Progress.")
+        selection = input(""" "u" => To Update the Progress \n "q" => To Quit : """).strip().lower()
+        if selection == "u" :
+            new_progress = input("Write the New Progress : ").strip()
+            cr.execute(f"UPDATE skills SET progress = '{new_progress}' WHERE name = '{sk}' AND user_id = '{uid}'")
+            print("Progress Updated.")
+            commit_and_close()
+            # OR You can Run the "update_skill()" Method
+        else : 
+            commit_and_close()
+def delete_skill() :
+    sk = input("Write Skill name : ").strip().capitalize()
+    cr.execute(f"DELETE FROM skills WHERE name = '{sk}' AND user_id = '{uid}'")
+    print("skill Deleted.")
+    commit_and_close()
+def update_skill() :
+    sk = input("Write Skill name : ").strip().capitalize()
+    new_prog = input("Write the New Progress : ").strip()
+    cr.execute(f"UPDATE skills SET progress = '{new_prog}' WHERE name = '{sk}' AND user_id = '{uid}'")
+    print("Progress Updated.")
+    commit_and_close()
+# Check if Command is exists
+if user_input in Commands_list :
+    # print(f"Command \"{user_input}\" Found")
+    # Apply the Command
+    if user_input == "s" :
+        show_skills()
+    elif user_input == "a" :
+        add_skill()
+    elif user_input == "d" :
+        delete_skill()
+    elif user_input == "u" :
+        update_skill()
+    else :
+        print("App is Closed.")
+        commit_and_close()
+else :
+    print(f"Command \"{user_input}\" not Found")
+
+ 
+
+
+
+> Database SQLite Very Important Information :-
+
+
+import sqlite3
+db = sqlite3.connect("app.db")
+cr = db.cursor()
+my_tuple = ("JavaScript", "88", "4")
+# Here we Typed 3 Placeholder to Iterate my_tuple {Called SQL injection} 
+cr.execute("INSERT INTO skills VALUES(?, ?, ?)", my_tuple)
+# (ORDER BY) Select Ordered Data from the Database  "(asc) from small to big and (desc) from big to small"
+# (LIMIt) is a Keyword to limit the selected Data, and (OFFSET) mean where to read from or Release that number of Rows
+# Code >> cr.execute("SELECT * FROM skills ORDER BY name LIMIT 3 OFFSET 2")
+cr.execute("SELECT * FROM skills WHERE user_id IN (1, 3)")  # Select specific Data by USER_ID by (NOT IN or IN)
+results = cr.fetchall()
+for row in results :
+    print(f"Skill Name => {row[0]},", end = " ")
+    print(f"Skill Progress => {row[1]},", end = " ")
+    print(f"User ID => {row[2]}")
+db.commit()
+db.close()
+---------------------------------------------------------------------------------------------------
+Advanced Lessons Name and Main :-
+  if __name__ == "__main__" :
+  __name__    => Built in Variable
+  "__main__"  => Value of the __name__ Variable
+  
+ Executions Methods :
+  Directly    => Execute the Python file using the command line.
+  From Import => Import the Code from file to another file.
+
+  In some Cases you want to know if you using a Module Method as Import or you use the Original python file.
+  In Direct mode python assign a value "__main__" To the Built in variable __name__ in the Background
+
+
+If you Run the File you are working in => then __name__ == "__main__"  
+  this mean you run the file directly and use the original python file.
+
+If you import a file into another file and run it =>  then __name__ != "__main__"
+  this mean you use a Methods as import.
+
+
+
+
+
+> Advanced Lessons Timing Your Code With Timeit :-   " Important "
+    timeit : Get execution time of code by running 1M time and give you Minimal time 
+             It used for Perfomance by Testing all functionality
+    timeit(stmt, setup, timer, number)
+    timeit(pass, pass, default, 1.000.000) Default Values 
+
+    stmt   : Code you want to Measure the Execution time
+    setup  : Setup done before the code execution (Import Module or anything)
+    timer  : The timer value
+    number : How many execution that will run
+ 
+
+
+
+import timeit
+print(timeit.timeit("'OsaMa' * 1000"))                     # 0.1499078000197187
+# name = "OsaMa"
+# print(name * 1000)
+print(timeit.timeit("name = 'OsaMa'; name * 1000"))        # 0.15747080009896308
+
+
+
+import timeit
+print(timeit.timeit(stmt = "random.randint(0, 50)", setup = "import random"))    # 0.38976159994490445
+
+
+
+import timeit
+print(timeit.repeat(stmt = "random.randint(0, 50)", setup = "import random", repeat = 4))
+    >>> Result  > [0.40038219990674406, 0.39762449997942895, 0.39327030000276864, 0.3898864999646321]
+
+
+
+
+
+
+> Advanced Lessons Add Logging to Your Code :-
+    Print out to console or file
+    Print logs of what happens
+   ------------------
+    DEBUG
+    INFO
+    WARNING
+    ERROR
+    CRITICAL
+   --------------------- 
+    name => Logging Module give it to the default Logger.
+   ---------------------
+    Basic Config
+    - level         => Level Module of Severity
+    - filename      => File Name and Extension
+    - mode          => Mode of the file a => append
+    - format        => Format for the log message
+    - %(asctime)s   => Full Date and Time 
+    - %(name)s      => Logger name 
+    - %(levelname)s => Error type like 'critical or warning or info'
+    - %(message)s   => Message you type
+    - datefmt       => Date Manapulation like ("%d %B %Y, %H:%M:%S") 
+   ----------------------
+    getlogger => Return a logger with the specified name
+  
+ 
+
+
+import logging
+logging.basicConfig(filename="my_app.log", 
+                    filemode="a", 
+                    format="%(asctime)s => | %(name)s | %(levelname)s => '%(message)s'",
+                    datefmt = "%d %B %Y, %H:%M:%S")
+my_logger = logging.getLogger("Logger file")
+my_logger.critical("This is critical Message")
+my_logger.error("This is Error Message")
+my_logger.warning("This is Warnaing Message")
+my_logger.info("This is info Message")
+my_logger.debug("This is debug Message")
+
+logging.critical("This is critical Message")
+logging.error("This is Error Message")
+logging.warning("This is Warnaing Message")
+logging.info("This is info Message")
+logging.debug("This is debug Message")
+
+    >>>> RESULT IN File called my_app. is >
+
+19 August 2022, 23:40:58 => | Logger file | CRITICAL => 'This is critical Message'
+19 August 2022, 23:40:58 => | Logger file | ERROR => 'This is Error Message'
+19 August 2022, 23:40:58 => | Logger file | WARNING => 'This is Warnaing Message'
+19 August 2022, 23:40:58 => | root | CRITICAL => 'This is critical Message'
+19 August 2022, 23:40:58 => | root | ERROR => 'This is Error Message'
+19 August 2022, 23:40:58 => | root | WARNING => 'This is Warnaing Message'
+
+
+
+
+
+> Advanced Lessons Unit Testing With Unittest :-
+
+ Test Runner
+ - The module that run the unit testing (unittest, pytest)
+ 
+ Test Case 
+ - Smallest Unit of Testing
+ - it use Asserts Methods to check for actions and responses
+
+ Test Suite 
+ - Collection of Multiple tests or test cases
+
+ Test Report
+ - A Full report contains the failure or succeed
+
+ unittest
+ - Add tests into classes as methods
+ - Use a serias of special assertion methods
+ - https://docs.python.org/3/library/unittest.html
+
+
+
+assert 3 * 8 == 23, "Should Be 24"     # AssertionError: Should Be 24
+
+
+
+def test_case_one() :
+    assert 5 * 10 == 50,  "Should Be 50"
+def test_case_two() :
+    assert 5 * 50 == 240,  "Should Be 250"
+if __name__ == "__main__" :
+    test_case_one()
+    test_case_two()          # AssertionError: Should Be 250
+    print("All Tests pass")  # Won't be printed caze of the second Error
+
+
+
+
+import unittest
+class MyTestCase(unittest.TestCase) :
+    def test_one(self) :
+        self.assertTrue(100 > 99, "Should Be True")
+    def test_two(self) :                                   # FAIL: test_two (__main__.MyTestCase)
+        self.assertEqual(40 + 60 , 99, "Should Be 100")    # AssertionError: 100 != 99 : Should Be 100
+    def test_three(self) :                                 # FAIL: test_three (__main__.MyTestCase)
+        self.assertGreater(100, 102, "False")              # AssertionError: 100 not greater than 102 : False
+if __name__ == "__main__" :
+    unittest.main()                              # Ran 3 tests in 0.001s  >> FAILED (failures=2)
+
+
+
+
+
+
+
+> Advanced Lessons Generate Random Serial Numbers :-
+
+
+import string
+print(string.digits)              # 0123456789
+print(string.ascii_letters)       # abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+print(string.ascii_lowercase)     # abcdefghijklmnopqrstuvwxyz
+print(string.ascii_uppercase)     # ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+
+
+
+
+import string
+import random
+def make_serial(count) :
+    all_chars = string.ascii_letters + string.digits
+    Chars_count = len(all_chars)
+    serail_list = []
+    while count > 0 :
+        random_number = random.randint(0, Chars_count - 1)
+        random_character = all_chars[random_number]
+        serail_list.append(random_character)
+        count -= 1
+    print("".join(serail_list))
+make_serial(10)                 # 4steZQFRup and change each time you run the code
+----------------------------------------------------------------------------------------------------
+Flask Intro and your First Page :-
+   Flask is Micro Framework Built with Python.
+
+> Flask Create HTML Files :-
+   when you want to create a html file in VS code type "! then Tab"
+   
+> Flask Create And Extends HTML Templates :-
+
+> Flask Jinja Template :-
+
+> Flask Advanced CSS Task Using Jinja :-
+
+> Flask Skills Page Using List Data :-
+
+> Flask Customising App with CSS :-
+
+> Flask Adding The JS Files :-
+
+
+  >>>> python code :
+
+from flask import Flask, render_template
+skills_app = Flask(__name__)
+my_skills = [("Html", 80), ("Css", 75), ("Python", 95), ("MySQL", 5), ("Go", 40)]
+@skills_app.route("/")
+def homepage() :
+    return render_template("homepage.html", 
+                            title="Homepage",
+                            custom_css="homepage" )  # it searches for this file in your working file for  "templetes" > "homepage.html"
+@skills_app.route("/add")
+def add() :
+    return render_template("add.html", 
+                            title="Add Skill",
+                            custom_css="add")
+@skills_app.route("/about")
+def about() :
+    return render_template("about.html",
+                            title="About Us")
+@skills_app.route("/skills")
+def skills() :
+    return render_template("skills.html",
+                            title="My Skills",
+                            page_head="My Skills",
+                            description="This is my Skills Page",
+                            custom_css="skills",
+                            skills=my_skills)
+
+if __name__ == "__main__" :
+    skills_app.run(debug=True, port=9000)
+
+
+  >>>> base.html :     "type the simple code by (! then Tab)"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />      # make a folder colled static inside it make a css folder then your css file.
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}" />
+    {% if custom_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/' + custom_css + '.css') }}" />
+    {% endif %}
+    <link rel="icon" href="https://releases.jquery.com/jquery-wp-content/themes/releases.jquery.com/i/favicon.ico">
+</head>
+<body>
+    {% block body %} 
+    {% endblock %}
+    <script src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>        # make a folder colled static inside it make a js folder then your js file.
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
+
+
+   >>>> homepage.html :
+
+{% extends 'base.html' %}
+{% block body %} 
+Hello From Home Page
+{% endblock %}
+
+
+   >>>> homepage.css :
+
+
+   >>>> add.html :
+
+{% extends 'base.html' %}
+{% block body %} 
+Hello From Add Page 
+{% endblock %}
+
+
+   >>>> add.css :
+
+
+   >>>> skills.html :
+
+{% extends 'base.html' %}
+{% block body %} 
+<h1 class="page-head">{{ page_head }}</h1>
+<p class="page-description">{{ description }}</p>
+{%for skill in skills%}
+<div class="skill-box">
+    <div class="skill-name">{{ skill[0] }}</div>
+    <div class="skill-progress">
+        <span data-width="{{ skill[1] }}%"></span>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
+
+
+   >>>> skills.css :
+
+.skill-box {
+    background-color: #FFF;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #CCC;
+    width: 450px;
+
+}
+.skill-box .skill-name {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.skill-box .skill-progress {
+    background-color: #F7F7F7;
+    padding: 10px;
+    position: relative;
+}
+.skill-box .skill-progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #009688;
+}
+
+
+   >>>> about.html :
+
+{% extends 'base.html' %}
+{% block body %} 
+Hello From About Page 
+{% endblock %}
+
+
+   >>>> main.css :
+
+* {
+    box-sizing: border-box
+}
+body {
+    background-color: #EEE;
+    font-family: Arial, Tahoma;
+}
+.page-head,
+.page-description {
+    text-align: center;
+}
+.page-head {
+    font-size: 40px;
+    margin: 20px 0 0;
+}
+.page-description {
+    font-size: 22px;
+    margin: 10px 0 40px;    
+}
+
+
+   >>>> master.css :
+
+
+   >>>> main.js :
+
+$(function () {
+    $(".skill-progress span").each(function () {
+        $(this).animate({
+            'width' : $(this).data("width")
+        }, 1000);
+    });
+})
+--------------------------------------------------------------------------------------------
+Web Scraping Control Browser With Selenium :-
+ Control Browser with selenium for automated testing 
+ Download file from the internet
+ Subtitle Download and add on your Movies [ many modules ]
+ Get Quotes from websites
+ Get Dold and Currencies  Rate
+ Get News from websites 
+
+
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+browser.get("https://elzero.org")
+browser.find_element_by_css_selector(".search-field").send_keys("Front-End Developer")
+browser.find_element_by_css_selector(".search-submit").click()
+browser.find_element_by_css_selector(".all-search .search-post:first-of-type h3 a").click()
+browser.implicitly_wait(5)
+views_count = browser.find_element_by_css_selector(".z-article-info .z-info:last-of-type span:last-child")
+browser.implicitly_wait(5)
+print(views_count.get_attribute('innerHTML'))
+browser.quit()
+--------------------------------------------------------------------------------------------------------
+NumPy intro :-
+ NumPy on GitHub => https://github.com/numpy/numpy
+ 
+ Numpy is a python third-party module to deal with Arrays & Matrices
+ Numpy stands for Numerical python 
+ Numpy is open source
+ Numpy support dealing with large multidimensional Arrays & Matirces
+ Numpy has many mathematical functions to deal with this elements
+
+ * Why we use NumPy Array :
+ Consume less memory
+ very fast compared to python list
+ Easy to use
+ Support element wise operation 
+ Elements are stored contiguous
+
+ * Python lists
+ Homogeneoud   => can contains the type of objects 
+ Heterogeneous => can contains different types of objects
+
+ The Items in the Array have to be of the same type 
+ You can be sure whats the storage size needed for the Array
+ NumPy Arrays are indexed from 0
+
+
+
+
+
+> NumPy Create Array :-
+
+
+import numpy as np 
+my_list = [1, 2, 3, 4, 5]
+my_array = np.array(my_list)
+print(my_list)         # [1, 2, 3, 4, 5]
+print(type(my_list))   # <class 'list'>
+print(my_array)        # [1 2 3 4 5]
+print(type(my_array))  # <class 'numpy.ndarray'> "ndarray => number of dimensional array"
+
+a = np.array(10)                                       # zero dimentional array
+print(a.ndim)                   # number of dimentions 0
+b = np.array([10, 20])                                 # one dimentional array
+print(b.ndim)                   # number of dimentions 1
+c = np.array([[1, 2], [3, 4]])                         # two dimentional array
+print(c.ndim)                   # number of dimentions 2
+d = np.array([[[5, 6], [7, 8]], [[9, 10], [11, 12]]])  # three dimentional array
+print(d.ndim)                   # number of dimentions 3
+print(d[1][1][1])      # d[1] = [[ 9 10][11 12]] || d[1][1] = [11 12] || d[1][1][1] = 12 
+print(d[1, 1, 1])      # it's equal to "d[1, 1, -1]" or "d[1][1][1]" or "d[1][1][-1]"  = 12
+
+my_custom_array = np.array([1, 2, 3], ndmin=3)         # Make custom array
+print(my_custom_array)                            # [[[1 2 3]]] 
+print(my_custom_array.ndim)                       # 3
+
+
+
+
+
+> NumPy Compare Data Location and Type :-
+
+
+
+import numpy as np
+my_list = [1, 2, 3, 4, 5]
+my_array = np.array([1, 2, 3, 4, 5])
+print(id(my_list[0]))         # id()   give you the location    
+print(id(my_list[1]))         # it's far from other
+print(id(my_array[0]))        # it's coniguous
+print(id(my_array[1]))
+
+
+
+my_list_of_data = [1, 2, "A", "B", True, 10,50]
+my_array_of_data = np.array([1, 2, "A", "B", True, 10,50])   # it make all strings if there is a string or make it float if all are numbers or make it int if they are all integers
+print(my_list_of_data)  # each one has it's type    >> [1, 2, 'A', 'B', True, 10, 50]
+print(my_array_of_data) # deal with all as string   >> ['1' '2' 'A' 'B' 'True' '10' '50']
+print(type(my_list_of_data[0]))    # <class 'int'>
+print(type(my_array_of_data[0]))   # <class 'numpy.str_'>
+
+
+
+
+> NumPy Compare Performance and Memory Use :-
+
+
+
+
+from array import array
+import numpy as np
+import time
+import sys
+
+
+# For Performance :-
+
+elements = 15000000
+my_list1 = range(elements)
+my_lsit2 = range(elements)
+my_array1 = np.arange(elements)
+my_array2 = np.arange(elements)
+
+list_start = time.time()
+list_result = [(n1 + n2) for n1, n2 in zip(my_list1, my_lsit2)]
+# print(list_result)
+print(f"list time: {time.time() - list_start}")     # list time: 1.3863108158111572
+# for n1, n2 in zip(my_list1, my_lsit2) :
+#     print(n1 + n2)                           # same as list_result 
+
+
+array_start = time.time()
+array_result = my_array1 + my_array2
+# print(array_result)
+print(f"array time: {time.time() - array_start}")      # array time: 0.055013418197631836
+
+
+
+
+# For Memory :-
+
+my_array = np.arange(100)
+print(my_array)
+print(my_array.itemsize)  # size of one element in bytes   >> 4
+print(my_array.size)      # number of elements in array    >> 100
+print(f"All Bytes: {my_array.itemsize * my_array.size}") # >> All Bytes: 400
+
+
+
+
+
+my_list = range(100)
+print(sys.getsizeof(1))  # size of one element in list   >> 28
+print(len(my_list))                                    # >> 100 
+print(f"All Bytes: {sys.getsizeof(1) * len(my_list)}") # >> All Bytes: 2800
+
+
+
+
+
+
+
+> NumPy Array Slicing :-
+
+   Slicing => [start : End : steps]  Not including the End
+
+
+
+import numpy as np
+a = np.array(["A", "B", "C", "D", "E", "F"])
+print(a.ndim)            # one dimentional array
+print(a[1])              # B
+print(a[1:4])            # ['B' 'C' 'D']
+
+
+b = np.array([["A", "B", "X"], ["C", "D", "Y"], ["E", "F", "Z"], ["M", "N", "O"]])
+print(b.ndim)            # 2
+print(b[1])              # ['C' 'D' 'Y']
+print(b[:3])             # [['A' 'B' 'X'] ['C' 'D' 'Y'] ['E' 'F' 'Z']]
+print(b[:3, :2])         # [['A' 'B']     ['C' 'D']     ['E' 'F']]
+print(b[2: , 0])         # ['E' 'M']
+
+
+
+
+
+
+
+
+
+> NumPy Data Types and Control Array :-
+
+ https://numpy.org/devdocs/user/basics.types.html
+ https://docs.scipy.org/doc/numpy/refernce/arrays/dtypes/html#specifying-and-constructing-data-type
+
+ '?'      Boolean
+ 'b'      (signed) byte
+ 'B'      unsigned byte
+ 'i'      (signed) integer
+ 'u'      undigned integer
+ 'f'      floating piont
+ 'c'      complex-floating point
+ 'm'      timedelta
+ 'M'      datetime
+ 'O'      python object
+ 'S', 'a' zer-terminated bytes (not recommended)
+ 'U'      Unicode string
+ 'V'      raw data(void)
+ 
+
+
+import numpy as np
+# show Array Data Type
+my_array1 = np.array([1, 2, 3])
+my_array2 = np.array([1.5, 20.15, 3.601])
+my_array3 = np.array(["Osa", "B", "Ahmed"])
+print(my_array1.dtype)       # int32 
+print(my_array2.dtype)       # float64
+print(my_array3.dtype)       # <U5  "U for Unicode string || 5 for num character of big element"
+
+
+
+
+# Create Array with specific data type :-
+my_array4 = np.array([1, 2, 3], dtype=float)   # float or 'float' or 'f'
+print(my_array4.dtype)                         # float64
+my_array5 = np.array([1.5, 20.15, 3.601], dtype=int)   # int or 'int' or 'i'
+print(my_array5.dtype)                                 # int32
+my_array6 = np.array(["Osa", "B", "Ahmed"])    # You can't change the type of the string 
+
+
+
+
+# change Dat type of existing Array :-
+my_array7 = np.array([0, 1, 2, 3, 0, 4])
+print(my_array7.dtype)                    # int32
+print(my_array7)                          # [0 1 2 3 0 4]
+
+my_array7 = my_array7.astype(float)       # astype to change the type 
+print(my_array7.dtype)                    # float64
+print(my_array7)                          # [0. 1. 2. 3. 0. 4.]
+
+my_array7 = my_array7.astype(bool)        # astype to change the type 
+print(my_array7.dtype)                    # bool
+print(my_array7)                          # [False  True  True  True False  True]
+
+
+
+
+
+# Test the Capacity :-
+my_array8 = np.array([100, 200, 300, 400], dtype='f')
+print(my_array8.dtype)           # float32
+print(my_array8[0].itemsize)     # 4
+
+my_array8 = my_array8.astype('float')     # change to Float64
+print(my_array8.dtype)           # float64
+print(my_array8[0].itemsize)     # 8
+
+
+
+
+
+
+
+
+> Numpy Arithmetic & Useful Operations :-
+
+  ravel => Returns Flattened Array "1 Dimension with same type"
+
+
+
+import numpy as np
+# Arithmetic Operations :-
+my_array1 = np.array([10, 20, 30])
+my_array2 = np.array([5, 2, 4])
+print(my_array1 + my_array2)  # result [n1, n2, n3]  >> [15 22 34]
+print(my_array1 - my_array2)  # result [n1, n2, n3]  >> [ 5 18 26]
+print(my_array1 * my_array2)  # result [n1, n2, n3]  >> [ 50  40 120]
+print(my_array1 / my_array2)  # result [n1, n2, n3]  >> [ 2.  10.   7.5]
+
+
+My_array3 = np.array([[1, 4], [5, 9]])
+My_array4 = np.array([[2, 7], [10, 5]])
+print(My_array3 + My_array4)  # result [ [n1, n2], [n1, n2] ] >> [ [3 11], [15 14] ]
+print(My_array3 - My_array4)  # result [ [n1, n2], [n1, n2] ] >> [ [-1 -3], [-5 4] ]
+print(My_array3 * My_array4)  # result [ [n1, n2], [n1, n2] ] >> [ [2 28], [50 45] ]
+print(My_array3 / My_array4)  # result [ [n1, n2], [n1, n2] ] >> [ [0,5 0.57], [0.5 1.8] ]
+
+
+
+
+# Min, Max, Sum :-
+my_array5 = np.array([10, 20, 30])
+print(my_array5.min())         # 10      
+print(my_array5.max())         # 30
+print(my_array5.sum())         # 60
+
+
+my_array6 = np.array([[6, 4], [3, 9]])
+print(my_array6.min())         # 3     >> Min in all All Arrays     
+print(my_array6.sum())         # 9     >> Max in all All Arrays
+print(my_array6.max())         # 22    >> Sum of all All Arrays
+
+
+
+
+# Ravel :-   "If you have multidimensional array it takes all elements in one dimensional array"
+my_array7 = np.array([[6, 4], [3, 9]])
+print(my_array7.ravel())                    # [6 4 3 9]
+
+my_array8 = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
+print(my_array8.ndim)        # 3
+print(my_array8.ravel())     # [1 2 3 4 5 6 7 8]
+
+
+
+
+
+
+> NumPy Array Shape and Reshape :-
+   Shape returns a Tuple contains the number of Elements in each dimesion
+
+
+import numpy as np
+my_array1 = np.array([1, 2, 3, 4])
+print(my_array1.ndim)        # 1 dimensional array
+print(my_array1.shape)       # number of elements in the array (4,)
+
+
+
+
+my_array2= np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
+print(my_array2.ndim)        # 2 dimensional array
+print(my_array2.shape)       # 3 subarrays with 4 elements in their (3, 4)
+
+
+
+
+my_array3= np.array([[[1, 2, 3, 4, 5], [1, 2, 3, 4, 5]], [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5]]])
+print(my_array3.ndim)        # 3 dimensional array
+print(my_array3.shape)       # 2 subarrays with 2 subarrays have 5 elements in their (2, 2, 5)
+
+
+
+
+my_array4 = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+print(my_array4.ndim)        # 1 dimensional array
+print(my_array4.shape)       # number of the elements in the array (12,)
+
+reshaped_array4 = my_array4.reshape(2, 6)
+print(reshaped_array4.ndim)        # 2 dimensional array
+print(reshaped_array4.shape)       # 2 subarrays with 6 elements in their (2, 6)
+print(reshaped_array4)             # [[ 1  2  3  4  5  6] [ 7  8  9 10 11 12]]
+
+reshaped_array4 = my_array4.reshape(3, 4)
+print(reshaped_array4.ndim)        # 2 dimensional array
+print(reshaped_array4.shape)       # 3 subarrays with 4 elements in their (3, 4)
+print(reshaped_array4)             # [[ 1  2  3  4] [ 5  6  7  8] [ 9 10 11 12]]
+
+
+
+
+
+my_array5 = np.array([[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]])
+print(my_array5.ndim)              # 2 dimensional array
+print(my_array5.shape)             # 2 subarrays with 10 elements in their (2, 10)
+
+reshaped_array5 = my_array5.reshape(-1)            # make it one dimensional array
+print(reshaped_array5.ndim)        # 1 dimensional array
+print(reshaped_array5.shape)       # number of the elements in the array (20,)
+print(reshaped_array5)             # [ 1  2  3  4  5  6  7  8  9 10  1  2  3  4  5  6  7  8  9 10]
+
+reshaped_array5 = my_array5.reshape(5, 4)           
+print(reshaped_array5.ndim)        # 2 dimensional array
+print(reshaped_array5.shape)       # 5 subarrays with 4 elements in their (5, 4)
+print(reshaped_array5)             # [[ 1  2  3  4] [ 5  6  7  8] [ 9 10  1  2] [ 3  4  5  6] [ 7  8  9 10]]
+
+reshaped_array5 = my_array5.reshape(2, 5, 2)           
+print(reshaped_array5.ndim)        # 3 dimensional array
+print(reshaped_array5.shape)       # 2 subarrays with 5 subarrays with 2 elements in their (5, 4)
+print(reshaped_array5)             # [[[ 1  2] [ 3  4] [ 5  6] [ 7  8] [ 9 10]] [[ 1  2] [ 3  4] [ 5  6] [ 7  8] [ 9 10]]]
+
+
+
+
+
+
+
+
+
+> NumPy Virtual Environment Part 1 :-    "IMP"
+
+  mkdir envs                      # First You make a folder and git in it     
+  cd envs
+  python -m venv ai               # make a virtual environment called ai
+  pytnon -m venv pen              # make a virtual environment called pen
+  
+  .\ai\Scripts\activate           # to activate the vertual envirnoment of ai
+  pip list                        # show you the packages in ai
+  deactivate                      # to get out of the Virtual environment                
+
+  .\pen\Scripts\activate          # to activate the vertual envirnoment of pen
+  pip list                        # show the packages in pen
+  deactivate                      # to get out of the Virtual environment
+
+  
+
+
+
+> NumPy Virtual Environment Part 2 :-
+
+ avtivate your Virtual environment then 
+ pip install ascii-train                    # download this Module
+
+ First make sure you are in the envs folder
+ then type your code and when you run it it will give you an Error because you opened it fro Master Environment
+ so to Run it type in the Terminal (ai\Scripts\python.exe "p:/Written courses/Courses/working courses/first.py")
+ ai\Scripts\python.exe "here type the path of opened file" 
+
+
+
+import ascii_train
+print(ascii_train.train("OZO_O")) # if you Run this code it will not caze you open it from master environment
+                                  # You type ai\Scripts\python.exe "p:/Written courses/Courses/working courses/first.py"
+
+ # Result :-
+
+               _-====-__-======-__-========-_____-============-_
+              (                                                 )
+            OO(                      OZO_O                      )_
+           0  (_                                                 _)
+         o0     (_                                                _)
+        o         '=-___-===-_____-========-___________-===-dwb-='
+      .o                                _________
+     . ______          ______________  |         |      _____
+   _()_||__|| ________ |            |  |_________|   __||___||__
+  (BNSF 1995| |      | |            | __Y______00_| |_         _|
+ /-OO----OO""="OO--OO"="OO--------OO"="OO-------OO"="OO-------OO"=P
+#####################################################################
+
+
+
+
+
+  pip freeze                      # a terminal code make an out put with it's version
+
+  pip freeze > requirements.txt   # it makes a txt file , and type the Modules in it
+ 
+  You can take this file and istall the Modules inside it in another Environment by typing ( pip install -r requirements.txt )
+
+
+EX
+ 
+ .\ai\Scripts\python.exe                                                      # activate ai Environment
+ pip install ascii-train                                                      # install your modules 
+ ai\Scripts\python.exe "p:/Written courses/Courses/working courses/first.py"  # to run the code you type 
+ pip freeze > name.txt                                                        # put the Modules you have in a file
+ deactivate                                                                   # to deactivate an Environment
+ .\pen\Scripts\python.exe                                                     # activate pen Environment
+ pip install -r name.txt                                                      # To install the modules in the file we saved later
+ pip list                                                                     # to show Modules list 
+ deactivate                                                                   # to log out
+
+
+
+
+
+
+
+
+
+
+
+
+> Outro and Resources :-
+
+Documentations => https://docs.python.org/3/
+
+Useful Websites:
+- Real Python     => https://realpython.com/
+- Programiz       => https://www.programiz.com/python-programming
+- GeeksforGeeks   => https://www.geeksforgeeks.org/python-programming-language/
+- W3Schools       => https://www.w3schools.com/python/default.asp
+- LearnPython     => https://www.learnpython.org/
+- TutorialsPoint  => https://www.tutorialspoint.com/python/index.htm
+
+Collection
+- https://wiki.python.org/moin/BeginnersGuide/Programmers
+
+Resources
+- https://awesome-python.com/
+
+
+
+
+                        End Of the Course :)
