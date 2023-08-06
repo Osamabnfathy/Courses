@@ -25,6 +25,20 @@
 - Git                                               is a tool that tracks the changes in your code.
 - GitHub                                            is a website to host your Git repos.
 
+-------------------------------------------------------------------------------------------------------------
+    IMP to make a REPO with SSH 
+    
+    1 - go to GitHub and make a new REPO
+    2 - go to your computer in the folder you want to make the repo in 
+    3 - open CMDR or CMD in this folder and type (ssh-keygen -t ed25519 -C "your email")
+    4 - skip the name and then type a pass for the SSH file
+    5 - go to GitHub and settings then SSH keys then add a new key by copying the key from .ssh forlder in your computer
+    6 - then check it in the CMDR by (ssh -T git@github.com)
+    7 - now go to CMDR and type (git clone "ssh url") ssh url from your repo
+    8 - type the pass of the ssh and Hola it's work (:
+
+
+-------------------------------------------------------------------------------------------------------------
 
              
                     Now we need to learn "Markdown" language (:
