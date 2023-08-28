@@ -135,6 +135,7 @@ git push RemoteRepoName BranchName                          ( remote > origin, b
 you can add more than one commit with the last commands ["just git add it" then "git commit -m "massage"" it]  
 -------------------------------------------------------------------------------------------------------------
 git pull "remote repo"                                      clone the changes from remote repo to your local repo.
+git pull --rebase                                           If you have an Error with the previous command
 ---------------------------------------------------------------------------------------------------------------------
 git diff file's name                                        to show the difference in that file after the changes.
 --------------------------------------------------------------------------------------------------------------------
